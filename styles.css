@@ -888,3 +888,23 @@ em { font-style: normal; color: var(--green-bright); }
     flex-shrink: 0;
   }
 }
+
+/* ── КНОПКА "ПРОДУКТ В РАБОТЕ" ─────────────────────────── */
+.btn-video {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.btn-video svg { flex-shrink: 0; }
+.btn-video:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+  background: rgba(255,255,255,0.04);
+}
+@media (max-width: 680px) {
+  .btn-video { width: 100%; justify-content: center; border-radius: 12px; }
+}
