@@ -74,3 +74,27 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     window.scrollTo({ top, behavior: 'smooth' });
   });
 });
+
+/* ── BOTTOM NAV ACTIVE STATE ──────────────────────────── */
+const bnItems = document.querySelectorAll('.bn-item');
+
+const bnObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.id;
+      bnItems.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${id}`));
+    }
+  });
+}, { threshold: 0.4 });
+
+sections.forEach(s => bnObserver.observe(s));
+
+/* ── TAP HAPTIC-LIKE FEEDBACK ─────────────────────────── */
+bnItems.forEach(item => {
+  item.addEventListener('touchstart', () => {
+    item.style.transform = 'scale(0.9)';
+  }, { passive: true });
+  item.addEventListener('touchend', () => {
+    setTimeout(() => { item.style.transform = ''; }, 150);
+  }, { passive: true });
+});
