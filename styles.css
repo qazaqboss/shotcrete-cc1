@@ -908,3 +908,110 @@ em { font-style: normal; color: var(--green-bright); }
 @media (max-width: 680px) {
   .btn-video { width: 100%; justify-content: center; border-radius: 12px; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   MOBILE FIX — точечные правки
+═══════════════════════════════════════════════════════════ */
+@media (max-width: 680px) {
+
+  /* HEADER — телефон: убираем рамку, делаем компактнее */
+  .site-header .btn-phone {
+    border: none;
+    background: transparent;
+    padding: 8px 0 8px 8px;
+    gap: 5px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: var(--green-bright);
+  }
+  .site-header .btn-phone svg { display: none; }
+
+  /* Все три hero-кнопки: строго на полную ширину */
+  .hero-ctas {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    width: 100%;
+  }
+  .hero-ctas .btn,
+  .hero-ctas .btn-primary,
+  .hero-ctas .btn-outline,
+  .hero-ctas .btn-video {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 16px 20px !important;
+    border-radius: 14px !important;
+    font-size: 13px !important;
+    letter-spacing: 0.08em !important;
+    box-sizing: border-box !important;
+    overflow: hidden;
+    gap: 8px;
+  }
+
+  /* Hero-метрики — ровная сетка 2×2 */
+  .metrics {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+  }
+  .metric {
+    border-radius: var(--r-lg) !important;
+  }
+
+  /* О продукте — мета-сетка 1 колонка на маленьких */
+  .about-meta { grid-template-columns: 1fr !important; }
+
+  /* Таблицы — горизонтальный скролл с fade-маской справа */
+  .spec-table { min-width: 520px; }
+  .test-card,
+  .cert-card,
+  .specs-block { overflow: hidden; }
+  .test-tbl,
+  .cert-tbl,
+  .full-tbl {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* Шаги — ровные карточки */
+  .steps-grid { gap: 8px !important; }
+  .step-card {
+    padding: 18px 16px !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Расход — 2×2 */
+  .cons-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+  .cons-card { padding: 20px 12px !important; }
+  .cons-val { font-size: 36px !important; }
+
+  /* Контакты */
+  .contacts-grid { gap: 24px !important; }
+  .company-card { border-radius: var(--r-lg) !important; }
+
+  /* Footer коды в 2 колонки */
+  .footer-codes {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4px 10px !important;
+  }
+
+  /* Убираем overflow у body */
+  body { overflow-x: hidden; }
+}
+
+/* Очень маленькие экраны (< 390px) */
+@media (max-width: 389px) {
+  .hero-title { font-size: 42px !important; }
+  .site-header .btn-phone { font-size: 11px; }
+  .m-val { font-size: 32px !important; }
+}
