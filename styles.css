@@ -859,3 +859,62 @@ body { overflow-x: clip; max-width: 100vw; position: relative; }
   .m-val { font-size: 30px !important; }
   .hero-ctas > a { font-size: 11px !important; padding: 14px 10px !important; }
 }
+
+/* ═══ ФИНАЛЬНЫЙ OVERFLOW FIX ═══════════════════════════════
+   page-clip: страница не скроллится вправо
+   tbl-scroll: таблица скроллится внутри своей коробки
+══════════════════════════════════════════════════════════ */
+.page-clip {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+/* Скролл-обёртка для таблиц */
+.tbl-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--r);
+}
+
+/* На десктопе таблицы — обычные */
+@media (min-width: 681px) {
+  .tbl-scroll { overflow-x: visible; }
+}
+
+/* На мобильном: таблицы — белый-space nowrap внутри скролл-обёртки */
+@media (max-width: 680px) {
+  /* Отменяем display:table с !important из предыдущих правил */
+  .tbl-scroll .spec-table {
+    display: table !important;
+    white-space: nowrap;
+    width: max-content !important;
+    table-layout: auto !important;
+    font-size: 11px !important;
+  }
+  .tbl-scroll .spec-table th,
+  .tbl-scroll .spec-table td {
+    white-space: nowrap !important;
+    word-break: normal !important;
+    padding: 10px 10px !important;
+    font-size: 11px !important;
+  }
+
+  /* Индикатор что таблица скроллится */
+  .tbl-scroll {
+    position: relative;
+  }
+  .tbl-scroll::after {
+    content: '→ скролл';
+    position: sticky;
+    right: 0;
+    display: block;
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--muted-2);
+    padding: 3px 6px;
+    pointer-events: none;
+  }
+}

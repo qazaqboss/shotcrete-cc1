@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -55,6 +55,7 @@
     <a class="btn-phone" href="tel:87471111964">8 747 111 19 64</a>
   </div>
 
+  <div class="page-clip">
   <main>
     <!-- HERO -->
     <section id="hero" class="section-hero">
@@ -199,6 +200,7 @@
             </div>
             <div class="cert-card">
               <h3 class="cert-title">Сертификат соответствия</h3>
+              <div class="tbl-scroll">
               <table class="spec-table cert-tbl">
                 <tbody>
                   <tr><td>Номер</td><td><code>KZ.7500669.01.01.01610</code></td></tr>
@@ -209,6 +211,7 @@
                   <tr><td>Заявитель</td><td>ТОО «ЭкоМикс» · БИН 171140033124</td></tr>
                 </tbody>
               </table>
+              </div>
               <div class="cert-notice">
                 <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3.5M8 10v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
                 Для участия в тендерах рекомендуется проверить актуальность сертификата
@@ -219,7 +222,8 @@
           <div class="test-card">
             <h3 class="test-title">Протокол испытаний № 2209</h3>
             <div class="test-meta">ИЛ ТОО «КазЮжстройсертиф» · аттестат KZ.T.02.E0653 · 08.11.2023 · T +22°C · RH 64%</div>
-            <table class="spec-table test-tbl">
+            <div class="tbl-scroll">
+              <table class="spec-table test-tbl">
               <thead>
                 <tr><th>Показатель</th><th>НД / Норма</th><th class="col-fact">Факт</th></tr>
               </thead>
@@ -235,6 +239,7 @@
                 <tr><td>Подвижность, Пк, см</td><td>4–8 (Пк2)</td><td class="fv">7</td></tr>
               </tbody>
             </table>
+              </div>
             <div class="test-verdict">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 4L6 11.5 3 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               По всем показателям — соответствует требованиям НД
@@ -257,7 +262,8 @@
               <span class="sbadge sbadge-cert">Сертификационные испытания</span>
               <span class="specs-note">Протокол № 2209 · ИЛ «КазЮжстройсертиф»</span>
             </div>
-            <table class="spec-table full-tbl">
+            <div class="tbl-scroll">
+              <table class="spec-table full-tbl">
               <thead><tr><th>Показатель</th><th>Метод</th><th>Норма</th><th class="col-fact">Факт</th></tr></thead>
               <tbody>
                 <tr><td>Влажность, %</td><td>ГОСТ 8735-88</td><td>≤ 0,2</td><td class="fv">0,1</td></tr>
@@ -271,13 +277,15 @@
                 <tr><td>Потеря массы, %</td><td></td><td>≤ 5</td><td class="fv">2,5</td></tr>
               </tbody>
             </table>
+              </div>
           </div>
           <div class="specs-block">
             <div class="specs-head">
               <span class="sbadge sbadge-to">По техническому описанию</span>
               <span class="specs-note">+25&thinsp;°C · влажность 50&thinsp;%</span>
             </div>
-            <table class="spec-table full-tbl two-col">
+            <div class="tbl-scroll">
+              <table class="spec-table full-tbl two-col">
               <tbody>
                 <tr><td>Цвет</td><td>Серый</td></tr>
                 <tr><td>Плотность приготовленного раствора, кг/л</td><td>(2,15 ± 0,15)</td></tr>
@@ -293,6 +301,7 @@
                 <tr><td>Перерыв между слоями, ч</td><td>8 – 12</td></tr>
               </tbody>
             </table>
+              </div>
           </div>
         </div>
       </div>
@@ -454,6 +463,8 @@
       <span>Контакты</span>
     </a>
   </nav>
+
+  </div><!-- /page-clip -->
 
   <script src="script.js"></script>
 </body>
