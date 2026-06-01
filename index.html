@@ -11,7 +11,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=6" />
+
+  <style>
+    /* КРИТИЧЕСКИЙ МОБИЛЬНЫЙ FIX — не убирать */
+    @media (max-width: 700px) {
+      html, body { overflow-x: hidden !important; max-width: 100vw !important; }
+      /* Шапка не выходит за экран */
+      .site-header { overflow: hidden !important; }
+      .header-inner { max-width: 100% !important; }
+      /* Телефон: только иконка */
+      .btn-phone span { display: none !important; }
+      .btn-phone {
+        border: none !important; background: none !important;
+        padding: 8px !important; gap: 0 !important;
+        min-width: 0 !important; max-width: 40px !important;
+      }
+      /* Все три кнопки — полная ширина */
+      .hero-ctas {
+        display: flex !important; flex-direction: column !important;
+        align-items: stretch !important; gap: 10px !important;
+        width: 100% !important;
+      }
+      .hero-ctas > a, .hero-ctas .btn {
+        display: flex !important; width: 100% !important;
+        max-width: 100% !important; box-sizing: border-box !important;
+        justify-content: center !important; align-items: center !important;
+        padding: 16px 12px !important; border-radius: 14px !important;
+        font-size: 12px !important; gap: 7px !important;
+      }
+      /* Hero секция */
+      .section-hero, .section-hero .container,
+      .hero-layout, .hero-text { max-width: 100% !important; overflow-x: hidden !important; }
+      /* Таблицы */
+      .tbl-scroll { overflow-x: auto !important; display: block !important; max-width: 100% !important; }
+    }
+  </style>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
