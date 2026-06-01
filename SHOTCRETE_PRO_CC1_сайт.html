@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EasyMix SHOTCRETE PRO CC1 — сухой торкрет-бетон | ТОО «ЭкоМикс»</title>
+<meta name="description" content="SHOTCRETE PRO CC1 — сертифицированный сухой торкрет-бетон EasyMix для шахт, тоннелей и ремонта ЖБ. Сжатие 27,4 МПа (М250), морозостойкость F50. ГОСТ 31357.">
+<meta property="og:title" content="EasyMix SHOTCRETE PRO CC1 — сухой торкрет-бетон">
+<meta property="og:description" content="Сертифицированный торкрет-бетон для механизированного набрызга. Сжатие 27,4 МПа (М250), F50.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0d0b;--bg-2:#0f130f;--surface:#161b16;--surface-2:#1b211b;
+    --ink:#f1f3ee;--muted:#9aa39a;--muted-2:#6c756c;
+    --line:rgba(255,255,255,0.10);--line-strong:rgba(255,255,255,0.18);
+    --green:#3aa55f;--green-bright:#7ec64a;--green-deep:#123322;--green-glow:rgba(126,198,74,0.16);
+    --maxw:1240px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:'Golos Text',sans-serif;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.04;background-image:radial-gradient(circle at 1px 1px,#fff 1px,transparent 0);background-size:4px 4px}
+  ::selection{background:var(--green-bright);color:#0b0d0b}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--green-bright);display:flex;align-items:center;gap:14px}
+  .eyebrow::before{content:"";width:34px;height:2px;background:var(--green-bright)}
+
+  /* HEADER */
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(11,13,11,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:.3s}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{display:flex;align-items:baseline;gap:7px;font-family:'Oswald';font-weight:700;font-size:21px;letter-spacing:.04em}
+  .brand .cc{color:var(--green-bright)}
+  .brand small{font-family:'JetBrains Mono';font-weight:400;font-size:10px;color:var(--muted);letter-spacing:.2em}
+  nav ul{display:flex;gap:28px;list-style:none}
+  nav ul a{font-size:13px;color:var(--muted);letter-spacing:.04em;transition:.2s;position:relative;padding:4px 0}
+  nav ul a:hover{color:var(--ink)}
+  nav ul a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--green-bright);transition:.25s}
+  nav ul a:hover::after{width:100%}
+  .nav-cta{font-family:'JetBrains Mono';font-size:13px;color:var(--ink);border:1px solid var(--line-strong);padding:9px 16px;border-radius:2px;transition:.25s;white-space:nowrap}
+  .nav-cta:hover{border-color:var(--green-bright);color:var(--green-bright)}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+  .burger span{width:24px;height:2px;background:var(--ink)}
+
+  /* HERO */
+  .hero{position:relative;padding:170px 0 90px;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-20%;right:-10%;width:60vw;height:60vw;z-index:0;background:radial-gradient(circle,var(--green-glow),transparent 60%)}
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .85fr;gap:50px;align-items:center}
+  .hero h1{font-family:'Oswald';font-weight:700;text-transform:uppercase;line-height:.92;font-size:clamp(44px,7vw,96px);letter-spacing:.005em;margin:22px 0 0}
+  .hero h1 .cc{color:var(--green-bright)}
+  .hero .sub{font-size:clamp(16px,2vw,20px);color:var(--muted);max-width:560px;margin-top:24px}
+  .hero .sub b{color:var(--ink);font-weight:600}
+  .hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .tag{font-family:'JetBrains Mono';font-size:12px;color:var(--ink);border:1px solid var(--line);padding:7px 13px;border-radius:2px;background:var(--surface)}
+  .hero-actions{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
+  .btn{font-family:'JetBrains Mono';font-size:14px;padding:14px 26px;border-radius:2px;letter-spacing:.03em;transition:.25s;cursor:pointer;display:inline-flex;align-items:center;gap:10px}
+  .btn-pri{background:var(--green-bright);color:#0b0d0b;font-weight:700}
+  .btn-pri:hover{background:#94d662;transform:translateY(-2px)}
+  .btn-sec{border:1px solid var(--line-strong);color:var(--ink)}
+  .btn-sec:hover{border-color:var(--green-bright);color:var(--green-bright)}
+  .bag{position:relative;background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:4px;padding:36px 32px;box-shadow:0 30px 80px -30px rgba(0,0,0,.8)}
+  .bag .kraft{background:repeating-linear-gradient(135deg,#1f261d,#1f261d 8px,#222a1f 8px,#222a1f 16px);border-radius:3px;padding:32px 24px;text-align:center;border:1px solid var(--line)}
+  .bag .kraft .label{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.28em;color:var(--muted)}
+  .bag .kraft .big{font-family:'Oswald';font-weight:700;font-size:38px;line-height:.98;margin:10px 0 2px;letter-spacing:.02em}
+  .bag .kraft .big .cc{color:var(--green-bright)}
+  .bag .kraft .pro{font-family:'Oswald';font-weight:500;font-size:16px;letter-spacing:.34em;color:var(--green-bright)}
+  .bag .kraft .kg{font-family:'Oswald';font-weight:700;font-size:56px;color:var(--ink);line-height:1;margin-top:8px}
+  .bag .kraft .gost{font-family:'JetBrains Mono';font-size:11px;color:var(--muted);margin-top:10px;letter-spacing:.12em}
+  .bag-foot{display:flex;justify-content:space-between;margin-top:22px;font-family:'JetBrains Mono';font-size:12px;color:var(--muted);gap:10px}
+  .bag-foot b{color:var(--green-bright);display:block;font-size:15px}
+  .stat-strip{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;margin-top:64px;overflow:hidden}
+  .stat-strip .cell{background:var(--bg-2);padding:26px 24px}
+  .stat-strip .cell .v{font-family:'Oswald';font-weight:700;font-size:34px;color:var(--green-bright);line-height:1}
+  .stat-strip .cell .v small{font-size:17px;color:var(--ink)}
+  .stat-strip .cell .k{font-family:'JetBrains Mono';font-size:12px;color:var(--muted);margin-top:8px;letter-spacing:.05em}
+
+  /* SECTION */
+  section{position:relative;z-index:2;padding:96px 0;border-top:1px solid var(--line)}
+  .sec-head{margin-bottom:54px;max-width:780px}
+  .sec-head h2{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:clamp(30px,4vw,52px);line-height:1.02;margin-top:18px;letter-spacing:.01em}
+  .sec-head p{color:var(--muted);font-size:17px;margin-top:18px}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .about-grid p{color:var(--muted);font-size:16px;margin-bottom:18px}
+  .about-grid p b{color:var(--ink);font-weight:600}
+  .feature-list{list-style:none;display:grid;gap:14px}
+  .feature-list li{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:3px;transition:.25s}
+  .feature-list li:hover{border-color:var(--green);transform:translateX(4px)}
+  .feature-list .ico{color:var(--green-bright);flex-shrink:0;margin-top:2px}
+  .feature-list b{display:block;font-size:15px;margin-bottom:2px}
+  .feature-list span{font-size:13.5px;color:var(--muted)}
+
+  /* VIDEO */
+  .video-frame{position:relative;aspect-ratio:16/9;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 30px 80px -40px rgba(0,0,0,.9)}
+  .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+  /* APPS */
+  .apps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .app-card{background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:.3s}
+  .app-card:hover{border-color:var(--green);transform:translateY(-6px);box-shadow:0 24px 50px -28px rgba(0,0,0,.9)}
+  .photo{position:relative;aspect-ratio:16/10;background-color:#0e120e;display:flex;flex-direction:column;align-items:center;justify-content:center;border-bottom:1px solid var(--line);text-align:center;padding:20px}
+  .photo .frame{position:absolute;inset:14px;border:1px dashed var(--line-strong);border-radius:3px}
+  .photo .picon{color:var(--green);opacity:.8;margin-bottom:12px}
+  .photo .cap{font-family:'JetBrains Mono';font-size:11.5px;color:var(--muted);letter-spacing:.05em;line-height:1.5;max-width:88%}
+  .photo .cap b{color:var(--green-bright);display:block;font-size:12px;letter-spacing:.18em;margin-bottom:6px}
+  .app-card .body{padding:24px}
+  .app-card .num{font-family:'JetBrains Mono';font-size:12px;color:var(--green-bright);letter-spacing:.1em}
+  .app-card h3{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:23px;margin:8px 0 12px;letter-spacing:.02em}
+  .app-card ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .app-card ul li{font-size:13.5px;color:var(--muted);padding-left:18px;position:relative}
+  .app-card ul li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--green);border-radius:1px}
+
+  /* CERT + TESTS */
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-bottom:34px}
+  .tiles .t{background:var(--bg-2);padding:28px 22px}
+  .tiles .t .v{font-family:'Oswald';font-weight:700;font-size:40px;color:var(--green-bright);line-height:1}
+  .tiles .t .v small{font-size:18px;color:var(--ink)}
+  .tiles .t .k{font-family:'JetBrains Mono';font-size:11.5px;color:var(--muted);margin-top:8px;letter-spacing:.04em}
+  .proto-table{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--surface)}
+  .proto-table .ph{display:grid;grid-template-columns:2fr 1fr 1fr;background:var(--green-deep);padding:14px 24px;font-family:'JetBrains Mono';font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-bright)}
+  .proto-table .pr{display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 24px;border-top:1px solid var(--line);transition:.2s;gap:14px;align-items:center}
+  .proto-table .pr:hover{background:var(--surface-2)}
+  .proto-table .pr .nm{color:var(--muted);font-size:14.5px}
+  .proto-table .pr .nr{font-family:'JetBrains Mono';font-size:14px;color:var(--muted-2);text-align:right}
+  .proto-table .pr .fc{font-family:'JetBrains Mono';font-size:15px;color:var(--green-bright);font-weight:700;text-align:right}
+  .proto-foot{font-family:'JetBrains Mono';font-size:12px;color:var(--muted-2);padding:14px 24px;border-top:1px solid var(--line);background:var(--bg-2)}
+
+  .cert-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;margin-top:24px}
+  .cert-card{background:linear-gradient(155deg,var(--green-deep),var(--surface));border:1px solid var(--green);border-radius:6px;padding:34px;position:relative;overflow:hidden}
+  .cert-card::before{content:"";position:absolute;right:-50px;top:-50px;width:200px;height:200px;background:radial-gradient(circle,var(--green-glow),transparent 65%)}
+  .cert-badge{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono';font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--green-bright);border:1px solid var(--green);padding:6px 12px;border-radius:2px;margin-bottom:18px}
+  .cert-card h3{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:22px;letter-spacing:.02em;margin-bottom:14px}
+  .cert-row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+  .cert-row .k{color:var(--muted)}
+  .cert-row .v{font-family:'JetBrains Mono';font-size:13.5px;text-align:right;color:var(--ink)}
+  .cert-row .v.g{color:var(--green-bright);font-weight:700}
+  .doc-list{display:flex;flex-direction:column;gap:14px}
+  .doc-item{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:20px;transition:.25s}
+  .doc-item:hover{border-color:var(--green);transform:translateX(4px)}
+  .doc-item .dico{color:var(--green-bright);flex-shrink:0;margin-top:2px}
+  .doc-item h4{font-family:'JetBrains Mono';font-size:13.5px;letter-spacing:.05em;margin-bottom:4px}
+  .doc-item p{font-size:13px;color:var(--muted)}
+
+  /* SPEC */
+  .spec-wrap{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--surface)}
+  .spec-head{display:grid;grid-template-columns:1.4fr 1fr;background:var(--green-deep);padding:16px 26px;font-family:'JetBrains Mono';font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-bright)}
+  .spec-row{display:grid;grid-template-columns:1.4fr 1fr;padding:15px 26px;border-top:1px solid var(--line);transition:.2s;gap:20px}
+  .spec-row:hover{background:var(--surface-2)}
+  .spec-row .name{color:var(--muted);font-size:15px}
+  .spec-row .val{font-family:'JetBrains Mono';font-size:15px;color:var(--ink);font-weight:500;text-align:right}
+  .spec-row .val em{color:var(--green-bright);font-style:normal}
+  .spec-note{font-family:'JetBrains Mono';font-size:12px;color:var(--muted-2);padding:16px 26px;border-top:1px solid var(--line);background:var(--bg-2)}
+
+  /* CONSUMPTION */
+  .cons{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+  .cons .c{background:var(--surface);padding:30px 24px;text-align:center;transition:.25s}
+  .cons .c:hover{background:var(--surface-2)}
+  .cons .c .t{font-family:'JetBrains Mono';font-size:13px;color:var(--green-bright);letter-spacing:.1em}
+  .cons .c .big{font-family:'Oswald';font-weight:700;font-size:38px;margin:12px 0 2px}
+  .cons .c .u{font-size:13px;color:var(--muted)}
+
+  /* STEPS */
+  .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .step{display:flex;gap:20px;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:24px;transition:.25s}
+  .step:hover{border-color:var(--green)}
+  .step .n{font-family:'Oswald';font-weight:700;font-size:34px;color:var(--green-deep);-webkit-text-stroke:1px var(--green);line-height:1;flex-shrink:0}
+  .step h4{font-family:'Oswald';font-weight:600;text-transform:uppercase;font-size:17px;margin-bottom:7px;letter-spacing:.02em}
+  .step p{font-size:14px;color:var(--muted)}
+
+  /* GALLERY */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .gallery .photo{aspect-ratio:4/3;border:1px solid var(--line);border-radius:4px}
+
+  /* CTA */
+  .cta{background:linear-gradient(150deg,var(--green-deep),var(--bg-2));border:1px solid var(--green);border-radius:6px;padding:56px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
+  .cta::before{content:"";position:absolute;right:-60px;bottom:-60px;width:280px;height:280px;background:radial-gradient(circle,var(--green-glow),transparent 65%)}
+  .cta h2{font-family:'Oswald';font-weight:700;text-transform:uppercase;font-size:clamp(30px,4vw,46px);line-height:1.02;position:relative}
+  .cta p{color:var(--muted);margin-top:16px;font-size:16px;position:relative}
+  .contact-card{position:relative;display:flex;flex-direction:column;gap:18px}
+  .contact-card .ci{display:flex;gap:14px;align-items:flex-start}
+  .contact-card .ci .ico{color:var(--green-bright);flex-shrink:0;margin-top:3px}
+  .contact-card .ci .k{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .contact-card .ci .v{font-size:17px;color:var(--ink)}
+  .contact-card .ci a.v:hover{color:var(--green-bright)}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:50px 0 40px;position:relative;z-index:2}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px}
+  .foot-grid .small{font-family:'JetBrains Mono';font-size:12px;color:var(--muted-2);line-height:1.9}
+  .foot-grid .small b{color:var(--muted)}
+
+  .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .rv.in{opacity:1;transform:none}
+
+  @media(max-width:980px){
+    .hero-grid,.about-grid,.cta,.cert-grid{grid-template-columns:1fr;gap:36px}
+    .apps{grid-template-columns:1fr 1fr}
+    .stat-strip,.tiles,.cons{grid-template-columns:1fr 1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr}
+    nav ul,.nav-cta{display:none}
+    .burger{display:flex}
+  }
+  @media(max-width:620px){
+    .wrap{padding:0 20px}
+    .apps,.cons,.gallery,.stat-strip,.tiles{grid-template-columns:1fr}
+    .spec-row,.spec-head{grid-template-columns:1fr;gap:6px}
+    .spec-row .val{text-align:left}
+    .proto-table .ph,.proto-table .pr{grid-template-columns:1.6fr .7fr .7fr;padding:12px 16px}
+    .cta{padding:34px}
+    section{padding:70px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand">SHOTCRETE PRO<span class="cc">CC1</span><small>EASYMIX</small></a>
+    <nav><ul>
+      <li><a href="#about">Продукт</a></li>
+      <li><a href="#video">Видео</a></li>
+      <li><a href="#apps">Применение</a></li>
+      <li><a href="#cert">Сертификаты</a></li>
+      <li><a href="#spec">Характеристики</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul></nav>
+    <a href="tel:+77075390000" class="nav-cta">8 (707) 539-00-00</a>
+    <div class="burger" onclick="document.querySelector('nav ul').style.display='flex';this.style.display='none'"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="border-top:none">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow rv">Сухой торкрет-бетон · Сертифицировано</div>
+        <h1 class="rv">SHOTCRETE<br>PRO <span class="cc">CC1</span></h1>
+        <p class="sub rv">Заводская торкрет-смесь EasyMix для <b>механизированного набрызга бетона</b> в шахтах, тоннелях, на промышленных и ремонтных объектах. Подтверждена сертификатом соответствия и протоколами испытаний РК.</p>
+        <div class="hero-tags rv">
+          <span class="tag">Торкретирование</span>
+          <span class="tag">Подземные выработки</span>
+          <span class="tag">Ремонт ЖБ</span>
+          <span class="tag">ГОСТ 31357</span>
+        </div>
+        <div class="hero-actions rv">
+          <a href="#cert" class="btn btn-pri">Сертификаты и испытания →</a>
+          <a href="#video" class="btn btn-sec">▶ Смотреть видео</a>
+        </div>
+      </div>
+      <div class="bag rv">
+        <div class="kraft">
+          <div class="label">EASYMIX · СУХАЯ СМЕСЬ</div>
+          <div class="pro">PRO</div>
+          <div class="big">SHOTCRETE <span class="cc">CC1</span></div>
+          <div class="kg">25 KG</div>
+          <div class="gost">ГОСТ 31357 · ТОО «ЭКОМИКС»</div>
+        </div>
+        <div class="bag-foot">
+          <div>Сжатие 28 сут<b>27,4 МПа</b></div>
+          <div>Морозостойкость<b>F50</b></div>
+          <div>Марка<b>М250</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-strip rv">
+      <div class="cell"><div class="v">27,4<small> МПа</small></div><div class="k">Сжатие, 28 сут (М250)</div></div>
+      <div class="cell"><div class="v">4,1<small> МПа</small></div><div class="k">Изгиб, 28 суток</div></div>
+      <div class="cell"><div class="v">F50</div><div class="k">Морозостойкость</div></div>
+      <div class="cell"><div class="v">96<small> %</small></div><div class="k">Водоудержание</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">01 — О продукте</div>
+      <h2>Прочный набрызг<br>для сложных условий</h2>
+      <p>Готовая к применению сухая смесь на цементной основе для нанесения торкрет-способом на вертикальные, наклонные, сводчатые и потолочные поверхности.</p>
+    </div>
+    <div class="about-grid">
+      <div class="rv">
+        <p><b>EasyMix SHOTCRETE PRO CC1</b> образует прочный слой бетона с хорошей адгезией к основанию, сниженным отскоком, стабильной удобоукладываемостью и равномерным набором ранней прочности.</p>
+        <p>Материал работает в условиях повышенной нагрузки: <b>шахты, тоннели, подземные выработки, технические галереи, промышленные объекты, подпорные стены, резервуары и ремонт бетонных конструкций.</b></p>
+        <p>После затворения водой смесь подаётся через торкрет-оборудование и наносится плотным слоем. После твердения покрытие обладает прочностью марки <b>М250</b> и морозостойкостью <b>F50</b>.</p>
+      </div>
+      <ul class="feature-list">
+        <li class="rv"><span class="ico">◆</span><div><b>Сертифицированный продукт</b><span>Протоколы испытаний и сертификат соответствия РК</span></div></li>
+        <li class="rv"><span class="ico">◆</span><div><b>Высокая адгезия</b><span>Сцепление с бетоном, камнем, кирпичом и горной породой</span></div></li>
+        <li class="rv"><span class="ico">◆</span><div><b>Своды и потолки</b><span>Удерживается на вертикальных и потолочных поверхностях</span></div></li>
+        <li class="rv"><span class="ico">◆</span><div><b>Морозостойкость F50</b><span>Потеря прочности всего 6,2 %, потеря массы 2,5 %</span></div></li>
+        <li class="rv"><span class="ico">◆</span><div><b>Заводское качество</b><span>Не требует подбора компонентов на площадке</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">02 — Видео</div>
+      <h2>SHOTCRETE PRO CC1 в работе</h2>
+      <p>Технология торкретирования и применение продукта на объекте.</p>
+    </div>
+    <div class="video-frame rv">
+      <iframe src="https://www.youtube.com/embed/Wv3hL8fNS7A" title="EasyMix SHOTCRETE PRO CC1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section id="apps">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">03 — Сферы применения</div>
+      <h2>Где работает CC1</h2>
+      <p>От укрепления горных выработок до ремонта промышленного бетона. Серые блоки — места под фотографии объектов.</p>
+    </div>
+    <div class="apps">
+      <div class="app-card rv">
+        <div class="photo"><div class="frame"></div>
+          <svg class="picon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21V8l9-5 9 5v13"/><path d="M3 21h18"/><path d="M9 21v-6h6v6"/></svg>
+          <div class="cap"><b>ФОТО</b>Торкретирование свода шахтной выработки, оператор с соплом</div></div>
+        <div class="body"><div class="num">/ 01</div><h3>Подземное<br>и горное</h3>
+          <ul><li>Шахтные выработки и штреки</li><li>Первичная и вторичная крепь</li><li>Тоннели и технологические камеры</li><li>Стабилизация стен и сводов</li><li>Набрызг по сетке и анкерам</li></ul></div>
+      </div>
+      <div class="app-card rv">
+        <div class="photo"><div class="frame"></div>
+          <svg class="picon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 20h20"/><path d="M4 20V8l5-3 5 3v12"/><path d="M14 20v-8l6 3v5"/><path d="M7 11h2M7 15h2"/></svg>
+          <div class="cap"><b>ФОТО</b>Промышленный цех / резервуар / подпорная стена</div></div>
+        <div class="body"><div class="num">/ 02</div><h3>Промышленное<br>строительство</h3>
+          <ul><li>Заводские здания и цеха</li><li>Подпорные стены, фундаменты</li><li>Резервуары и ёмкости</li><li>Технологические каналы</li><li>Защита от износа</li></ul></div>
+      </div>
+      <div class="app-card rv">
+        <div class="photo"><div class="frame"></div>
+          <svg class="picon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 18h18"/><path d="M5 18V9h14v9"/><path d="M3 9l9-5 9 5"/><path d="M10 18v-5h4v5"/></svg>
+          <div class="cap"><b>ФОТО</b>Ремонт ЖБ-конструкции моста / тоннеля до и после</div></div>
+        <div class="body"><div class="num">/ 03</div><h3>Гражданское<br>и инфраструктура</h3>
+          <ul><li>Ремонт железобетона</li><li>Восстановление фасадов</li><li>Укрепление старого бетона</li><li>Мостовые и тоннельные элементы</li><li>Защитные покрытия</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE + TESTS -->
+<section id="cert">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">04 — Сертификаты и испытания</div>
+      <h2>Подтверждённое качество</h2>
+      <p>Результаты сертификационных испытаний продукта в аккредитованной лаборатории и действующий сертификат соответствия Республики Казахстан.</p>
+    </div>
+
+    <div class="tiles rv">
+      <div class="t"><div class="v">27,4<small> МПа</small></div><div class="k">Сжатие 28 сут · М250</div></div>
+      <div class="t"><div class="v">4,1<small> МПа</small></div><div class="k">Изгиб 28 суток</div></div>
+      <div class="t"><div class="v">F50</div><div class="k">Морозостойкость</div></div>
+      <div class="t"><div class="v">1550<small> кг/м³</small></div><div class="k">Средняя плотность</div></div>
+    </div>
+
+    <div class="proto-table rv">
+      <div class="ph"><div>Показатель</div><div style="text-align:right">Норма по НД</div><div style="text-align:right">Факт</div></div>
+      <div class="pr"><div class="nm">Прочность на сжатие, 28 суток</div><div class="nr">≥ 26,2 (М250)</div><div class="fc">27,4 МПа</div></div>
+      <div class="pr"><div class="nm">Прочность на изгиб, 28 суток</div><div class="nr">≥ 4,0</div><div class="fc">4,1 МПа</div></div>
+      <div class="pr"><div class="nm">Марка по морозостойкости</div><div class="nr">≥ F50</div><div class="fc">F50</div></div>
+      <div class="pr"><div class="nm">— потеря прочности при морозе</div><div class="nr">≤ 25 %</div><div class="fc">6,2 %</div></div>
+      <div class="pr"><div class="nm">— потеря массы</div><div class="nr">≤ 5 %</div><div class="fc">2,5 %</div></div>
+      <div class="pr"><div class="nm">Средняя плотность</div><div class="nr">> 1400</div><div class="fc">1550 кг/м³</div></div>
+      <div class="pr"><div class="nm">Водоудерживающая способность</div><div class="nr">≥ 95 %</div><div class="fc">96 %</div></div>
+      <div class="pr"><div class="nm">Подвижность</div><div class="nr">4–8 (Пк2)</div><div class="fc">7 см</div></div>
+      <div class="pr"><div class="nm">Влажность</div><div class="nr">≤ 0,2 %</div><div class="fc">0,1 %</div></div>
+      <div class="proto-foot">Протокол испытаний № 2209 · ИЛ ТОО «КазЮжстройсертиф» (аттестат № KZ.T.02.E0653) · НД: ГОСТ 31357-2007</div>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card rv">
+        <div class="cert-badge">● Действующий · 2026</div>
+        <h3>Сертификат соответствия</h3>
+        <div class="cert-row"><span class="k">Номер</span><span class="v g">KZ.7500669.01.01.01610</span></div>
+        <div class="cert-row"><span class="k">Статус</span><span class="v g">продлён, действует в 2026 г.</span></div>
+        <div class="cert-row"><span class="k">Орган</span><span class="v">ТОО «КазЮжстройсертиф», Алматы</span></div>
+        <div class="cert-row"><span class="k">Продукция</span><span class="v">торкрет-бетон SHOTCRETE PRO CC1</span></div>
+        <div class="cert-row"><span class="k">Соответствие</span><span class="v">ТР РК 1202 · ТР РК 348-НҚ · ГОСТ 31357-2007 · ГОСТ 30108-94</span></div>
+        <div class="cert-row"><span class="k">Схема</span><span class="v">3 (с инспекционным контролем)</span></div>
+      </div>
+      <div class="doc-list">
+        <div class="doc-item rv"><svg class="dico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg><div><h4>Протокол № 2209 / 2210</h4><p>ИЛ «КазЮжстройсертиф», 08.11.2023</p></div></div>
+        <div class="doc-item rv"><svg class="dico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg><div><h4>Протокол № 17188 / 17189</h4><p>ИЛ АО «НаЦЭкС», 05.10.2023</p></div></div>
+        <div class="doc-item rv"><svg class="dico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg><div><h4>Протокол № 137/С</h4><p>ИЛ ТОО «ЦеНПСЛ», 04.10.2023</p></div></div>
+        <div class="doc-item rv"><svg class="dico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l3 6 6 .5-4.5 4 1.5 6L12 15l-5.5 3.5 1.5-6L3.5 8.5 10 8z"/></svg><div><h4>ГОСТ 31357-2007</h4><p>Смеси сухие на цементном вяжущем</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEC -->
+<section id="spec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">05 — Технические характеристики</div>
+      <h2>Параметры продукта</h2>
+      <p>Показатели по техническому описанию. Значения даны для относительной влажности 50 % при температуре +25 °C.</p>
+    </div>
+    <div class="spec-wrap rv">
+      <div class="spec-head"><div>Показатель</div><div style="text-align:right">Значение</div></div>
+      <div class="spec-row"><div class="name">Цвет</div><div class="val">серый</div></div>
+      <div class="spec-row"><div class="name">Марка по прочности</div><div class="val"><em>М250</em></div></div>
+      <div class="spec-row"><div class="name">Плотность приготовленного раствора</div><div class="val">(2,15 ± 0,15) кг/л</div></div>
+      <div class="spec-row"><div class="name">Максимальная крупность наполнителя</div><div class="val">3,5 мм</div></div>
+      <div class="spec-row"><div class="name">Соотношение В/Т при смешивании</div><div class="val">0,11 – 0,17</div></div>
+      <div class="spec-row"><div class="name">Расход материала</div><div class="val">~20,5 кг/м² при слое 10 мм</div></div>
+      <div class="spec-row"><div class="name">Выход готового раствора</div><div class="val">~13 л из мешка 25 кг</div></div>
+      <div class="spec-row"><div class="name">Водонепроницаемость</div><div class="val"><em>W12</em></div></div>
+      <div class="spec-row"><div class="name">Прочность сцепления при растяжении</div><div class="val">≥ 2,0 МПа</div></div>
+      <div class="spec-row"><div class="name">Толщина слоя</div><div class="val">10 – 60 мм (локально до 120)</div></div>
+      <div class="spec-row"><div class="name">Расстояние сопла до основания</div><div class="val">0,75 – 1,25 м</div></div>
+      <div class="spec-row"><div class="name">Перерыв между слоями</div><div class="val">8 – 12 часов</div></div>
+      <div class="spec-row"><div class="name">Фасовка</div><div class="val">бумажный мешок 25 кг</div></div>
+      <div class="spec-row"><div class="name">Срок годности</div><div class="val">12 месяцев</div></div>
+      <div class="spec-note">⚠ Не является самостоятельной гидроизоляцией при постоянном гидростатическом давлении. Не допускать попадания влаги в сухую смесь.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSUMPTION -->
+<section id="cons">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">06 — Расход материала</div>
+      <h2>Сколько нужно смеси</h2>
+      <p>Ориентировочный расход сухой смеси по толщине слоя (без учёта отскока). Учитывайте технологический отскок 10–20 %.</p>
+    </div>
+    <div class="cons rv">
+      <div class="c"><div class="t">СЛОЙ 10 ММ</div><div class="big">~20,5</div><div class="u">кг/м²</div></div>
+      <div class="c"><div class="t">СЛОЙ 20 ММ</div><div class="big">~41</div><div class="u">кг/м²</div></div>
+      <div class="c"><div class="t">СЛОЙ 30 ММ</div><div class="big">~62</div><div class="u">кг/м²</div></div>
+      <div class="c"><div class="t">СЛОЙ 50 ММ</div><div class="big">~103</div><div class="u">кг/м²</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">07 — Технология нанесения</div>
+      <h2>Как наносить</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="n">01</div><div><h4>Подготовка основания</h4><p>Очистить от пыли, грязи, масла и слабых участков. Старый бетон — пескоструй или гидроструй. Увлажнить до матово-влажного состояния (без луж).</p></div></div>
+      <div class="step rv"><div class="n">02</div><div><h4>Затворение</h4><p>Чистая вода, В/Т = 0,11–0,17 (≈3,5–4,5 л на 25 кг). Перемешать до однородной массы без комков, выдержать 2–3 мин, перемешать повторно.</p></div></div>
+      <div class="step rv"><div class="n">03</div><div><h4>Набрызг</h4><p>Сопло под прямым углом, расстояние 0,75–1,25 м. Слой 10–60 мм за проход. Контролировать пыление и отскок подачей воды.</p></div></div>
+      <div class="step rv"><div class="n">04</div><div><h4>Послойно и уход</h4><p>Перерыв между слоями 8–12 часов. Защитить слой от высыхания, мороза и ударов; первые 24–72 часа поддерживать влажностный режим.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">08 — Фотоматериалы</div>
+      <h2>Фото для сайта</h2>
+      <p>Рекомендованный набор снимков. Замените серые блоки на реальные фотографии (формат 4:3 или 16:10, горизонтальные).</p>
+    </div>
+    <div class="gallery">
+      <div class="photo rv"><div class="frame"></div><svg class="picon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><div class="cap"><b>01 · ПРОДУКТ</b>Мешок 25 кг фронтально на нейтральном фоне</div></div>
+      <div class="photo rv"><div class="frame"></div><svg class="picon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><div class="cap"><b>02 · ПРОЦЕСС</b>Оператор торкрет-установки в момент набрызга</div></div>
+      <div class="photo rv"><div class="frame"></div><svg class="picon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><div class="cap"><b>03 · ОБЪЕКТ</b>Шахтная выработка / тоннель с готовым слоем</div></div>
+      <div class="photo rv"><div class="frame"></div><svg class="picon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><div class="cap"><b>04 · ФАКТУРА</b>Макро готового слоя — плотная поверхность</div></div>
+      <div class="photo rv"><div class="frame"></div><svg class="picon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><div class="cap"><b>05 · ИСПЫТАНИЯ</b>Лаборатория: образцы, пресс, замеры</div></div>
+      <div class="photo rv"><div class="frame"></div><svg class="picon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><div class="cap"><b>06 · ДОКУМЕНТЫ</b>Скан сертификата и протокола испытаний</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="cta rv">
+      <div>
+        <h2>Запросить КП<br>или образец</h2>
+        <p>Поставка сухого торкрет-бетона EasyMix SHOTCRETE PRO CC1 в мешках по 25 кг. Подбор под объект и консультация по технологии нанесения.</p>
+      </div>
+      <div class="contact-card">
+        <div class="ci"><span class="ico">▸</span><div><div class="k">Телефон</div><a class="v" href="tel:+77075390000">8 (707) 539-00-00</a></div></div>
+        <div class="ci"><span class="ico">▸</span><div><div class="k">E-mail</div><a class="v" href="mailto:info@easymix.kz">info@easymix.kz</a></div></div>
+        <div class="ci"><span class="ico">▸</span><div><div class="k">Адрес</div><div class="v">г. Актобе, Промзона, уч. 679/17</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="brand" style="font-size:24px">SHOTCRETE PRO<span class="cc">CC1</span></div>
+      <div class="small" style="margin-top:10px">Произведено и сертифицировано в Казахстане</div>
+    </div>
+    <div class="small">
+      <b>ТОО «ЭкоМикс»</b> · EASYMIX<br>
+      БИН 171140033124<br>
+      г. Актобе, Промзона, уч. 679/17<br>
+      ГОСТ 31357-2007 · Сертификат KZ.7500669.01.01.01610
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hdr=document.querySelector('header');
+  addEventListener('scroll',()=>{hdr.style.boxShadow=scrollY>20?'0 1px 30px rgba(0,0,0,.5)':'none'});
+  document.querySelectorAll('.hero .rv').forEach((el,i)=>{el.style.transitionDelay=(i*0.09)+'s';requestAnimationFrame(()=>setTimeout(()=>el.classList.add('in'),60))});
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12});
+  document.querySelectorAll('.rv:not(.hero .rv)').forEach((el,i)=>{el.style.transitionDelay=((i%4)*0.06)+'s';io.observe(el)});
+</script>
+</body>
+</html>
