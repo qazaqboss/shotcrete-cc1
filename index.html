@@ -5,13 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SHOTCRETE PRO CC1 — EasyMix | Торкрет-бетон ТОО «ЭкоМикс»</title>
   <meta name="description" content="EasyMix SHOTCRETE PRO CC1 — сухая строительная смесь для торкретирования. Прочность 40 МПа (М350), морозостойкость F50. Сертифицировано в РК. Производство ТОО «ЭкоМикс», Актобе." />
-  <meta property="og:title" content="SHOTCRETE PRO CC1 — EasyMix" />
-  <meta property="og:description" content="Сухой торкрет-бетон для механизированного набрызга. Прочность 40 МПа (М350), морозостойкость F50. ТОО «ЭкоМикс», Казахстан." />
+  <meta property="og:title" content="SHOTCRETE PRO CC1 — EasyMix | Торкрет для шахт" />
+  <meta property="og:description" content="Сухой торкрет-бетон для механизированного набрызга. Прочность 40 МПа (М350), морозостойкость F50, водостойкость W12. ТОО «ЭкоМикс», Казахстан." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shotcrete-cc1.vercel.app/" />
+  <meta property="og:image" content="https://shotcrete-cc1.vercel.app/og-banner.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="EasyMix SHOTCRETE PRO CC1 — торкрет-смесь для шахт и горнодобывающей промышленности" />
+  <meta property="og:site_name" content="EasyMix — ТОО «ЭкоМикс»" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://shotcrete-cc1.vercel.app/og-banner.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="map.css?v=1" />
 
   <style>
     /* КРИТИЧЕСКИЙ МОБИЛЬНЫЙ FIX — не убирать */
@@ -64,6 +74,7 @@
         <a href="#applications">Применение</a>
         <a href="#certification">Сертификация</a>
         <a href="#specs">Характеристики</a>
+        <a href="#delivery">Поставки</a>
         <a href="#contacts">Контакты</a>
       </nav>
       <div class="header-actions">
@@ -85,6 +96,7 @@
       <a href="#applications">Применение</a>
       <a href="#certification">Сертификация</a>
       <a href="#specs">Характеристики</a>
+      <a href="#delivery">Поставки</a>
       <a href="#contacts">Контакты</a>
     </nav>
     <a class="btn-phone" href="tel:87471111964">8 747 111 19 64</a>
@@ -454,6 +466,62 @@
       </div>
     </section>
 
+    <!-- DELIVERY MAP -->
+    <section id="delivery" class="section sect-surface dm">
+      <div class="container">
+        <div class="section-header dm-head">
+          <div>
+            <div class="section-label">География поставок</div>
+            <h2 class="section-title">Карта поставок<br/>по рудникам Казахстана</h2>
+          </div>
+          <p class="dm-lead">Где работают горнорудные компании и как далеко они от нашего завода в Актобе. Нажмите на объект, чтобы увидеть маршрут, расстояние и ориентировочный срок доставки.</p>
+        </div>
+
+        <div class="dm-stats" aria-label="Сводка">
+          <div class="dm-stat"><span class="dm-stat-num" data-count="15">0</span><span class="dm-stat-lbl">объектов на карте</span></div>
+          <div class="dm-stat"><span class="dm-stat-num" data-count="5">0</span><span class="dm-stat-lbl">горнорудных компаний</span></div>
+          <div class="dm-stat"><span class="dm-stat-num" data-count="100" data-suffix=" км">0</span><span class="dm-stat-lbl">до ближайшего, по дороге</span></div>
+          <div class="dm-stat"><span class="dm-stat-num" data-count="6" data-suffix=" из 15">0</span><span class="dm-stat-lbl">в пределах 300 км</span></div>
+        </div>
+
+        <div class="dm-chips" id="dm-chips" role="group" aria-label="Фильтр по компаниям"></div>
+
+        <div class="dm-layout">
+          <div class="dm-map-wrap">
+            <div id="dm-map" class="dm-map" role="region" aria-label="Карта Казахстана с объектами и заводом EasyMix"></div>
+            <button class="dm-reset" id="dm-reset" type="button">Весь Казахстан</button>
+            <div class="dm-legend" id="dm-legend" aria-hidden="true"></div>
+          </div>
+          <aside class="dm-panel" id="dm-panel" aria-live="polite">
+            <div class="dm-card" id="dm-card"></div>
+            <div class="dm-list-head">Объекты по удалённости</div>
+            <ol class="dm-list" id="dm-list"></ol>
+          </aside>
+        </div>
+
+        <div class="dm-table-head">
+          <h3 class="dm-h3">Расстояние и срок доставки</h3>
+          <span class="dm-note">отгрузка с завода в Актобе</span>
+        </div>
+        <div class="dm-table-wrap">
+          <table class="dm-table" id="dm-table">
+            <thead>
+              <tr><th>Объект</th><th>Компания</th><th>Регион</th><th>Сырьё</th><th class="num">По дороге</th><th class="num">По прямой</th><th class="num">Срок</th><th aria-label="Индикатор"></th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="dm-companies" id="dm-companies"></div>
+
+        <details class="dm-sources">
+          <summary>Источники и точность данных</summary>
+          <p>Объекты с пометкой ≈ показаны ориентировочно, точность ±10–20 км. Дорожные расстояния и время в пути рассчитаны по OpenStreetMap (OSRM). Срок доставки ориентировочный, для автотранспорта; точный срок по вашему объекту уточняйте у менеджера. Данные на 12.10.2026.</p>
+          <ul id="dm-sources"></ul>
+        </details>
+      </div>
+    </section>
+
     <!-- CONTACTS -->
     <section id="contacts" class="section-contacts">
       <div class="container">
@@ -539,5 +607,7 @@
   </div><!-- /page-clip -->
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+  <script src="map.js?v=1" defer></script>
 </body>
 </html>
