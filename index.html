@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SHOTCRETE PRO CC1 — EasyMix | Торкрет-бетон ТОО «ЭкоМикс»</title>
-  <meta name="description" content="EasyMix SHOTCRETE PRO CC1 — сухая строительная смесь для торкретирования. Прочность 40 МПа (М350), морозостойкость F50. Сертифицировано в РК. Производство ТОО «ЭкоМикс», Актобе." />
+  <meta name="description" content="EasyMix SHOTCRETE PRO CC1 — сухая строительная смесь для торкретирования. Прочность 33,5 МПа, морозостойкость F50, водонепроницаемость W12. Цена 108 000 ₸ за тонну. Сертификат соответствия РК. Производство ТОО «ЭкоМикс», Актобе." />
   <meta property="og:title" content="SHOTCRETE PRO CC1 — EasyMix | Торкрет для шахт" />
-  <meta property="og:description" content="Сухой торкрет-бетон для механизированного набрызга. Прочность 40 МПа (М350), морозостойкость F50, водостойкость W12. ТОО «ЭкоМикс», Казахстан." />
+  <meta property="og:description" content="Сухой торкрет-бетон для механизированного набрызга. Прочность 33,5 МПа, F50, W12. 108 000 ₸ за тонну с завода в Актобе. ТОО «ЭкоМикс», Казахстан." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://shotcrete-cc1.vercel.app/" />
   <meta property="og:image" content="https://shotcrete-cc1.vercel.app/og-banner.jpg" />
@@ -19,9 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=6" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-  <link rel="stylesheet" href="map.css?v=1" />
+  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="extra.css?v=1" />
 
   <style>
     /* КРИТИЧЕСКИЙ МОБИЛЬНЫЙ FIX — не убирать */
@@ -71,10 +70,11 @@
       </a>
       <nav class="nav-desktop" aria-label="Основная навигация">
         <a href="#about">О продукте</a>
-        <a href="#applications">Применение</a>
-        <a href="#certification">Сертификация</a>
+        <a href="#mine">В шахте</a>
+        <a href="#certification">Документы</a>
         <a href="#specs">Характеристики</a>
-        <a href="#delivery">Поставки</a>
+        <a href="#price">Цена</a>
+        <a href="#geo">География</a>
         <a href="#contacts">Контакты</a>
       </nav>
       <div class="header-actions">
@@ -93,10 +93,11 @@
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav>
       <a href="#about">О продукте</a>
-      <a href="#applications">Применение</a>
-      <a href="#certification">Сертификация</a>
+      <a href="#mine">В шахте</a>
+      <a href="#certification">Документы</a>
       <a href="#specs">Характеристики</a>
-      <a href="#delivery">Поставки</a>
+      <a href="#price">Цена</a>
+      <a href="#geo">География</a>
       <a href="#contacts">Контакты</a>
     </nav>
     <a class="btn-phone" href="tel:87471111964">8 747 111 19 64</a>
@@ -113,13 +114,14 @@
               <span class="tag">ГОСТ 31357-2007</span>
               <span class="tag">Сертифицировано в РК</span>
               <span class="tag">Фасовка 25 кг</span>
+              <span class="tag tag-price">108 000 ₸ / тонна</span>
               <span class="tag">Производство Казахстан</span>
             </div>
             <h1 class="hero-title stagger-2">SHOTCRETE<br/>PRO <em>CC1</em></h1>
             <p class="hero-sub stagger-3">Сухой торкрет-бетон для механизированного набрызга на вертикальные, наклонные, сводчатые и потолочные поверхности</p>
             <div class="hero-ctas stagger-4">
               <a href="#specs" class="btn btn-primary">Характеристики</a>
-              <a href="#certification" class="btn btn-outline">Сертификат</a>
+              <a href="#price" class="btn btn-outline">Цена · 108 000 ₸/т</a>
               <a href="#gallery" class="btn btn-video">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg>
                 Продукт в работе
@@ -134,26 +136,26 @@
         <!-- Metrics bar -->
         <div class="metrics stagger-5">
           <div class="metric">
-            <span class="m-val">40</span>
+            <span class="m-val">33,5</span>
             <span class="m-unit">МПа</span>
-            <span class="m-label">Прочность на сжатие<br/>28 сут · марка М350</span>
+            <span class="m-label">Прочность на сжатие<br/>28 сут · протокол №1563С</span>
           </div>
           <div class="m-sep" aria-hidden="true"></div>
           <div class="metric">
             <span class="m-val">F50</span>
-            <span class="m-label">Морозостойкость<br/>потеря прочности 6,2&thinsp;%</span>
-          </div>
-          <div class="m-sep" aria-hidden="true"></div>
-          <div class="metric">
-            <span class="m-val">5</span>
-            <span class="m-unit">МПа</span>
-            <span class="m-label">Прочность на изгиб<br/>28 сут</span>
+            <span class="m-label">Морозостойкость<br/>потеря прочности 6,0&thinsp;%</span>
           </div>
           <div class="m-sep" aria-hidden="true"></div>
           <div class="metric">
             <span class="m-val">W12</span>
             <span class="m-label">Водонепроницаемость<br/>ГОСТ 12730.5</span>
           </div>
+          <div class="m-sep" aria-hidden="true"></div>
+          <a class="metric metric-price" href="#price">
+            <span class="m-val">108&thinsp;000</span>
+            <span class="m-unit">₸ / тонна</span>
+            <span class="m-label">2&thinsp;700 ₸ за мешок 25 кг<br/>с завода в Актобе</span>
+          </a>
         </div>
       </div>
     </section>
@@ -184,7 +186,7 @@
               <li><span class="adv-dot" aria-hidden="true">◆</span>Удерживается на вертикалях, сводах и потолках</li>
               <li><span class="adv-dot" aria-hidden="true">◆</span>Уверенный набор ранней прочности — критично для шахтных работ</li>
               <li><span class="adv-dot" aria-hidden="true">◆</span>Сниженный отскок: оптимизированный зерновой состав</li>
-              <li><span class="adv-dot" aria-hidden="true">◆</span>Морозостойкость F50, потеря прочности всего 6,2&thinsp;%</li>
+              <li><span class="adv-dot" aria-hidden="true">◆</span>Морозостойкость F50 (50 циклов), потеря прочности всего 6,0&thinsp;%</li>
               <li><span class="adv-dot" aria-hidden="true">◆</span>Механизированное нанесение — ускоряет производство работ</li>
               <li><span class="adv-dot" aria-hidden="true">◆</span>Заводское качество без подбора компонентов на площадке</li>
               <li><span class="adv-dot" aria-hidden="true">◆</span>Производство в Казахстане, фасовка 25 кг</li>
@@ -194,8 +196,194 @@
       </div>
     </section>
 
+    <!-- MINE ANIMATION -->
+    <section id="mine" class="section reveal sect-surface mine">
+      <div class="container">
+        <div class="section-header mine-head">
+          <div>
+            <div class="section-label">CC1 под землёй</div>
+            <h2 class="section-title">Как работает<br/>торкрет в шахте</h2>
+          </div>
+          <p class="mine-lead">Разрез рудника: клеть спускает людей и материал по стволу, на горизонте −480&nbsp;м торкрет-машина набрызгивает SHOTCRETE PRO CC1 на кровлю выработки. Справа — сечение штрека: анкеры, сетка и слой торкрет-бетона.</p>
+        </div>
+
+        <div class="mine-grid">
+          <figure class="mine-plate mine-plate-wide">
+            <figcaption class="plate-corner"><span>Рис. 1 · Разрез рудника</span><span class="plate-live"><i></i>анимация</span></figcaption>
+            <div class="mine-scroll">
+            <svg class="mine-svg" data-still="9" viewBox="0 0 1200 600" role="img" aria-label="Анимация: разрез рудника, клеть движется по стволу, торкрет-машина наносит слой на кровлю штрека">
+              <defs>
+                <pattern id="mRock" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+                  <path d="M0 9H18" stroke="rgba(255,255,255,.035)" stroke-width="1"/>
+                </pattern>
+                <linearGradient id="mGround" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1A221A"/><stop offset="1" stop-color="#0E120E"/>
+                </linearGradient>
+                <clipPath id="mShaftClip"><rect x="146" y="24" width="28" height="520"/></clipPath>
+              </defs>
+
+              <!-- грунт и породы -->
+              <rect x="0" y="110" width="1200" height="490" fill="url(#mGround)"/>
+              <rect x="0" y="110" width="1200" height="490" fill="url(#mRock)"/>
+              <path class="m-strata" d="M0 180 C200 168 420 196 640 176 S1000 160 1200 184"/>
+              <path class="m-strata" d="M0 236 C260 250 520 222 760 240 S1060 256 1200 232"/>
+              <path class="m-strata" d="M0 380 C220 368 480 398 700 380 S1020 362 1200 392"/>
+              <path class="m-strata" d="M0 560 C240 548 520 574 760 556 S1040 546 1200 566"/>
+              <path class="m-ore" d="M760 330 C840 316 930 330 990 360 C1040 390 1030 440 990 452 C930 466 860 450 800 430 C750 410 720 352 760 330Z"/>
+              <text class="m-note" x="905" y="402" text-anchor="middle">РУДНОЕ ТЕЛО</text>
+              <line class="m-surface" x1="0" y1="110" x2="1200" y2="110"/>
+
+              <!-- шкала глубины -->
+              <g class="m-scale">
+                <line x1="60" y1="110" x2="60" y2="520"/>
+                <line x1="54" y1="110" x2="66" y2="110"/><text x="48" y="114" text-anchor="end">0 м</text>
+                <line x1="54" y1="290" x2="66" y2="290"/><text x="48" y="294" text-anchor="end">−240</text>
+                <line x1="54" y1="490" x2="66" y2="490"/><text x="48" y="494" text-anchor="end">−480</text>
+              </g>
+
+              <!-- копёр и подъёмная машина -->
+              <g class="m-head">
+                <path d="M128 110 L160 24 L192 110 M140 78 H180 M146 56 H174 M160 24 L232 92"/>
+                <rect x="232" y="80" width="64" height="30" rx="2"/>
+                <text class="m-note" x="264" y="72" text-anchor="middle">ПОДЪЁМ</text>
+                <g class="m-wheel">
+                  <circle cx="160" cy="26" r="14"/>
+                  <path d="M146 26 H174 M160 12 V40 M150 16 L170 36 M170 16 L150 36"/>
+                  <animateTransform attributeName="transform" type="rotate" from="0 160 26" to="360 160 26" dur="2.4s" repeatCount="indefinite"/>
+                </g>
+              </g>
+              <text class="m-lbl" x="200" y="34">КОПЁР</text>
+
+              <!-- ствол -->
+              <rect class="m-void" x="148" y="110" width="24" height="430"/>
+              <g clip-path="url(#mShaftClip)">
+                <g>
+                  <line class="m-rope" x1="160" y1="-600" x2="160" y2="120"/>
+                  <rect class="m-cage" x="151" y="120" width="18" height="26" rx="1"/>
+                  <line class="m-cage-line" x1="151" y1="133" x2="169" y2="133"/>
+                  <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 362;0 362;0 0" keyTimes="0;0.1;0.45;0.6;1" dur="10s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.45 0 .55 1;0 0 1 1;.45 0 .55 1"/>
+                </g>
+              </g>
+              <text class="m-lbl m-vert" x="134" y="210" transform="rotate(-90 134 210)" text-anchor="middle">СТВОЛ</text>
+
+              <!-- горизонт −240: крепь готова -->
+              <path class="m-void" d="M172 272 H1120 Q1140 272 1140 290 Q1140 308 1120 308 H172Z"/>
+              <line class="m-lining-done" x1="180" y1="273.5" x2="1120" y2="273.5"/>
+              <line class="m-vent" x1="190" y1="291" x2="1110" y2="291"/>
+              <text class="m-lbl" x="320" y="262">ГОРИЗОНТ −240 М · КРЕПЬ ГОТОВА</text>
+              <text class="m-note" x="1100" y="326" text-anchor="end">→ вентиляция</text>
+
+              <!-- горизонт −480: идёт торкретирование -->
+              <path class="m-void" d="M172 470 H1120 Q1140 470 1140 490 Q1140 510 1120 510 H172Z"/>
+              <line class="m-floor" x1="172" y1="510" x2="1130" y2="510"/>
+              <line class="m-mesh" x1="290" y1="476" x2="1110" y2="476"/>
+              <line class="m-lining" x1="290" y1="472.5" x2="1110" y2="472.5" pathLength="1000">
+                <animate attributeName="stroke-dashoffset" values="1000;1000;0;0" keyTimes="0;0.08;0.86;1" dur="10s" repeatCount="indefinite"/>
+              </line>
+              <text class="m-lbl m-lbl-hi" x="320" y="460">ГОРИЗОНТ −480 М · НАБРЫЗГ SHOTCRETE PRO CC1</text>
+
+              <!-- торкрет-машина -->
+              <g>
+                <g class="m-rig">
+                  <rect x="-104" y="488" width="66" height="16" rx="2"/>
+                  <rect x="-58" y="480" width="18" height="10" rx="1"/>
+                  <circle class="m-wheel-s" cx="-92" cy="506" r="5"/><circle class="m-wheel-s" cx="-50" cy="506" r="5"/>
+                  <path class="m-boom" d="M-46 486 L-14 486 L-6 482"/>
+                  <path class="m-spray" d="M-6 482 L-14 474 L6 474Z"/>
+                  <circle class="m-drop" cx="-4" cy="480" r="1.6"><animate attributeName="cy" values="481;474" dur=".45s" repeatCount="indefinite"/></circle>
+                  <circle class="m-drop" cx="-9" cy="480" r="1.3"><animate attributeName="cy" values="481;474" dur=".45s" begin=".15s" repeatCount="indefinite"/></circle>
+                  <circle class="m-drop" cx="2" cy="480" r="1.3"><animate attributeName="cy" values="481;474" dur=".45s" begin=".3s" repeatCount="indefinite"/></circle>
+                </g>
+                <animateTransform attributeName="transform" type="translate" values="290 0;290 0;1110 0;1110 0" keyTimes="0;0.08;0.86;1" dur="10s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.05;0.86;0.94;1" dur="10s" repeatCount="indefinite"/>
+              </g>
+              <text class="m-note" x="1110" y="540" text-anchor="end">слой 30–60 мм по сетке и анкерам</text>
+            </svg>
+            </div>
+          </figure>
+
+          <figure class="mine-plate">
+            <figcaption class="plate-corner"><span>Рис. 2 · Сечение штрека</span><span class="plate-live"><i></i>цикл 12 с</span></figcaption>
+            <svg class="mine-svg mine-svg-arch" data-still="11" viewBox="0 0 520 520" role="img" aria-label="Анимация: сечение выработки — установка анкеров, сетки и набрызг слоя SHOTCRETE PRO CC1 на свод">
+              <defs>
+                <pattern id="aRock" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <path d="M0 7H14" stroke="rgba(255,255,255,.05)" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect x="0" y="0" width="520" height="470" fill="#141A14"/>
+              <rect x="0" y="0" width="520" height="470" fill="url(#aRock)"/>
+              <text class="m-note" x="24" y="34">ГОРНАЯ ПОРОДА</text>
+              <path class="m-void" d="M110 450 V300 A150 150 0 0 1 410 300 V450Z"/>
+              <line class="m-floor" x1="90" y1="450" x2="430" y2="450"/>
+
+              <!-- анкеры -->
+              <g class="a-bolts">
+                <g><path d="M110 410 H36"/><rect x="104" y="404" width="6" height="12"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.04;0.08;0.96;1" dur="12s" repeatCount="indefinite"/></g>
+                <g><path d="M154 194 L98 138"/><rect x="150" y="190" width="6" height="12" transform="rotate(-45 153 196)"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.09;0.13;0.96;1" dur="12s" repeatCount="indefinite"/></g>
+                <g><path d="M260 150 V70"/><rect x="254" y="148" width="12" height="6"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.14;0.18;0.96;1" dur="12s" repeatCount="indefinite"/></g>
+                <g><path d="M366 194 L422 138"/><rect x="364" y="190" width="6" height="12" transform="rotate(45 367 196)"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.19;0.23;0.96;1" dur="12s" repeatCount="indefinite"/></g>
+                <g><path d="M410 410 H484"/><rect x="410" y="404" width="6" height="12"/><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.24;0.28;0.96;1" dur="12s" repeatCount="indefinite"/></g>
+              </g>
+
+              <!-- сетка -->
+              <path class="a-mesh" d="M116 450 V300 A144 144 0 0 1 404 300 V450">
+                <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.31;0.38;0.96;1" dur="12s" repeatCount="indefinite"/>
+              </path>
+
+              <!-- слой торкрет-бетона -->
+              <path id="aLining" class="a-lining" pathLength="1000" d="M121 450 V300 A139 139 0 0 1 399 300 V450">
+                <animate attributeName="stroke-dashoffset" values="1000;1000;0;0;1000" keyTimes="0;0.42;0.84;0.96;1" dur="12s" repeatCount="indefinite"/>
+              </path>
+
+              <!-- сопло, следующее по своду -->
+              <g class="a-nozzle">
+                <path class="m-boom" d="M0 70 V34"/>
+                <rect x="-5" y="26" width="10" height="10" rx="1"/>
+                <path class="m-spray" d="M0 28 L-12 4 L12 4Z"/>
+                <circle class="m-drop" cx="-3" cy="20" r="1.8"><animate attributeName="cy" values="26;6" dur=".4s" repeatCount="indefinite"/></circle>
+                <circle class="m-drop" cx="4" cy="20" r="1.5"><animate attributeName="cy" values="26;6" dur=".4s" begin=".13s" repeatCount="indefinite"/></circle>
+                <circle class="m-drop" cx="0" cy="20" r="1.5"><animate attributeName="cy" values="26;6" dur=".4s" begin=".26s" repeatCount="indefinite"/></circle>
+                <animateMotion dur="12s" repeatCount="indefinite" rotate="auto" keyPoints="0;0;1;1" keyTimes="0;0.42;0.84;1" calcMode="linear"><mpath href="#aLining"/></animateMotion>
+                <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4;0.43;0.84;0.87;1" dur="12s" repeatCount="indefinite"/>
+              </g>
+
+              <!-- подписи -->
+              <g class="a-callout">
+                <text class="m-lbl" x="24" y="398">АНКЕР</text>
+                <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.06;0.1;0.96;1" dur="12s" repeatCount="indefinite"/>
+              </g>
+              <g class="a-callout">
+                <text class="m-lbl" x="300" y="232">СЕТКА</text>
+                <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.34;0.38;0.96;1" dur="12s" repeatCount="indefinite"/>
+              </g>
+              <g class="a-callout">
+                <text class="m-lbl m-lbl-hi" x="260" y="300" text-anchor="middle">SHOTCRETE PRO CC1</text>
+                <text class="m-note" x="260" y="322" text-anchor="middle">слой 30–60 мм · отскок 5–10 %</text>
+                <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.84;0.88;0.96;1" dur="12s" repeatCount="indefinite"/>
+              </g>
+
+              <!-- шаги -->
+              <g class="a-steps">
+                <text x="40" y="500">01 АНКЕРЫ<animate attributeName="fill" values="#7EC64A;#6B786B" keyTimes="0;0.3" dur="12s" calcMode="discrete" repeatCount="indefinite"/></text>
+                <text x="160" y="500">02 СЕТКА<animate attributeName="fill" values="#6B786B;#7EC64A;#6B786B" keyTimes="0;0.3;0.42" dur="12s" calcMode="discrete" repeatCount="indefinite"/></text>
+                <text x="268" y="500">03 НАБРЫЗГ<animate attributeName="fill" values="#6B786B;#7EC64A;#6B786B" keyTimes="0;0.42;0.84" dur="12s" calcMode="discrete" repeatCount="indefinite"/></text>
+                <text x="396" y="500">04 КРЕПЬ<animate attributeName="fill" values="#6B786B;#7EC64A" keyTimes="0;0.84" dur="12s" calcMode="discrete" repeatCount="indefinite"/></text>
+              </g>
+            </svg>
+          </figure>
+        </div>
+
+        <div class="mine-facts">
+          <div class="mine-fact"><span class="mf-num">01</span><b>Держится на своде</b><span>Наносится на вертикальные, наклонные и потолочные поверхности без оплывания</span></div>
+          <div class="mine-fact"><span class="mf-num">02</span><b>Отскок 5–10&thinsp;%</b><span>Оптимизированный зерновой состав, крупность до 3,5 мм</span></div>
+          <div class="mine-fact"><span class="mf-num">03</span><b>W12 и F50</b><span>Водонепроницаемая крепь для обводнённых выработок, 50 циклов замораживания</span></div>
+          <div class="mine-fact"><span class="mf-num">04</span><b>+5…+30&thinsp;°C</b><span>Рабочая температура воздуха и основания, влажность до 80&thinsp;%</span></div>
+        </div>
+      </div>
+    </section>
+
     <!-- APPLICATIONS -->
-    <section id="applications" class="section reveal sect-surface">
+    <section id="applications" class="section reveal">
       <div class="container">
         <div class="section-header">
           <div class="section-label">Область применения</div>
@@ -230,59 +418,83 @@
       </div>
     </section>
 
-    <!-- CERTIFICATION -->
-    <section id="certification" class="section reveal">
+    <!-- CERTIFICATION + DOCUMENTS -->
+    <section id="certification" class="section reveal sect-surface">
       <div class="container">
         <div class="section-header">
           <div class="section-label">Подтверждённое качество</div>
-          <h2 class="section-title">Сертификация<br/>и результаты испытаний</h2>
+          <h2 class="section-title">Сертификат<br/>и протокол испытаний</h2>
         </div>
+
+        <div class="docs-grid">
+          <a class="doc-card" href="docs/sertifikat-sootvetstviya-ru.pdf" download target="_blank" rel="noopener">
+            <span class="doc-thumb"><img src="docs/prev-sertifikat-sootvetstviya-ru.jpg" alt="" loading="lazy" width="497" height="702"/><span class="doc-lang">RU</span></span>
+            <span class="doc-body">
+              <span class="doc-kind">Сертификат соответствия</span>
+              <span class="doc-title">№ KZ.7500669.01.01.83093</span>
+              <span class="doc-sub">Действителен до 29.09.2027 · КазЮжстройсертиф</span>
+              <span class="doc-dl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Скачать PDF · 312 КБ</span>
+            </span>
+          </a>
+          <a class="doc-card" href="docs/saikestik-sertifikaty-kz.pdf" download target="_blank" rel="noopener">
+            <span class="doc-thumb"><img src="docs/prev-saikestik-sertifikaty-kz.jpg" alt="" loading="lazy" width="497" height="702"/><span class="doc-lang">KZ</span></span>
+            <span class="doc-body">
+              <span class="doc-kind">Сәйкестік сертификаты</span>
+              <span class="doc-title">№ KZ.7500669.01.01.83093</span>
+              <span class="doc-sub">29.09.2027 ж. дейін жарамды · на казахском</span>
+              <span class="doc-dl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Скачать PDF · 315 КБ</span>
+            </span>
+          </a>
+          <a class="doc-card" href="docs/protokol-ispytanij-1563C.pdf" download target="_blank" rel="noopener">
+            <span class="doc-thumb"><img src="docs/prev-protokol-ispytanij-1563C.jpg" alt="" loading="lazy" width="497" height="702"/><span class="doc-lang">RU</span></span>
+            <span class="doc-body">
+              <span class="doc-kind">Протокол испытаний</span>
+              <span class="doc-title">№ 1563С от 28.09.2026</span>
+              <span class="doc-sub">ИЛ «КазЮжстройсертиф» · 3 страницы</span>
+              <span class="doc-dl"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Скачать PDF · 2,1 МБ</span>
+            </span>
+          </a>
+        </div>
+
         <div class="cert-grid">
-          <div class="cert-side">
-            <div class="cert-scan-ph" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span>Скан сертификата соответствия</span>
-              <span class="ph-note">assets/docs/certificate.pdf</span>
-            </div>
-            <div class="cert-card">
-              <h3 class="cert-title">Сертификат соответствия</h3>
-              <div class="tbl-scroll">
-              <table class="spec-table cert-tbl">
-                <tbody>
-                  <tr><td>Номер</td><td><code>KZ.7500669.01.01.01610</code></td></tr>
-                  <tr><td>Орган</td><td>ТОО «КазЮжстройсертиф», г. Алматы<br/><code>KZ.O.02.E0669</code></td></tr>
-                  <tr><td>Дата регистрации</td><td>02.02.2026</td></tr>
-                  <tr><td>Соответствует</td><td>ТР РК 1202, ТР РК 348-НҚ<br/>ГОСТ 31357-2007, ГОСТ 30108-94</td></tr>
-                  <tr><td>Схема</td><td>3 (с инспекционным контролем)</td></tr>
-                  <tr><td>Заявитель</td><td>ТОО «ЭкоМикс» · БИН 171140033124</td></tr>
-                </tbody>
-              </table>
-              </div>
-              <div class="cert-notice">
-                <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3.5M8 10v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                Для участия в тендерах рекомендуется проверить актуальность сертификата
-              </div>
+          <div class="cert-card">
+            <h3 class="cert-title">Сертификат соответствия</h3>
+            <div class="tbl-scroll">
+            <table class="spec-table cert-tbl">
+              <tbody>
+                <tr><td>Номер</td><td><code>KZ.7500669.01.01.83093</code></td></tr>
+                <tr><td>Регистрация</td><td>08.10.2026 · действителен до 29.09.2027</td></tr>
+                <tr><td>Орган</td><td>ТОО «КазЮжстройсертиф», г. Алматы<br/><code>KZ.O.02.E0669</code></td></tr>
+                <tr><td>Соответствует</td><td>ТР РК 348-НҚ (маркировка), ТР РК 435 «О безопасности зданий и сооружений, строительных материалов и изделий»<br/>ГОСТ 31357-2007, ГОСТ 30108-94</td></tr>
+                <tr><td>Основание</td><td>Протокол № 1563С от 28.09.2026, акт анализа производства от 15.07.2026</td></tr>
+                <tr><td>Схема</td><td>3, инспекционный контроль ОПС «КазЮжстройсертиф»</td></tr>
+                <tr><td>Изготовитель</td><td>ТОО «ЭкоМикс» · БИН 171140033124</td></tr>
+                <tr><td>Код ТН ВЭД</td><td><code>3824 50 9000</code></td></tr>
+              </tbody>
+            </table>
             </div>
           </div>
 
           <div class="test-card">
-            <h3 class="test-title">Протокол испытаний № 2209</h3>
-            <div class="test-meta">ИЛ ТОО «КазЮжстройсертиф» · аттестат KZ.T.02.E0653 · 08.11.2023 · T +22°C · RH 64%</div>
+            <h3 class="test-title">Протокол испытаний № 1563С</h3>
+            <div class="test-meta">ИЛ ТОО «КазЮжстройсертиф» · аттестат KZ.T.02.E0653 · испытания 17.07–25.09.2026 · T +22&thinsp;°C · RH 64&thinsp;%</div>
             <div class="tbl-scroll">
               <table class="spec-table test-tbl">
               <thead>
-                <tr><th>Показатель</th><th>НД / Норма</th><th class="col-fact">Факт</th></tr>
+                <tr><th>Показатель</th><th>Норма НД</th><th class="col-fact">Факт</th></tr>
               </thead>
               <tbody>
-                <tr><td>Прочность на сжатие, 28 сут, МПа</td><td>≥ 38,0 (М350)</td><td class="fv">40</td></tr>
-                <tr><td>Прочность на изгиб, 28 сут, МПа</td><td>≥ 4,5</td><td class="fv">5</td></tr>
-                <tr><td>Морозостойкость (ускоренный 2-й метод)</td><td>≥ F50</td><td class="fv">F50</td></tr>
-                <tr><td>Потеря прочности при морозе, %</td><td>≤ 25</td><td class="fv">6,2</td></tr>
-                <tr><td>Потеря массы при морозе, %</td><td>≤ 5</td><td class="fv">2,5</td></tr>
-                <tr><td>Средняя плотность, кг/м³</td><td>&gt; 1400</td><td class="fv">1550</td></tr>
-                <tr><td>Водонепроницаемость</td><td>W10</td><td class="fv">W12</td></tr>
-                <tr><td>Влажность, %</td><td>≤ 0,2</td><td class="fv">0,1</td></tr>
+                <tr><td>Прочность на сжатие, 28 сут, МПа</td><td>≥ 29,5</td><td class="fv">33,5</td></tr>
+                <tr><td>Прочность на изгиб, 28 сут, МПа</td><td>≥ 4,0</td><td class="fv">4,2</td></tr>
+                <tr><td>Морозостойкость, марка / циклов</td><td>F50 / 50</td><td class="fv">F50 / 50</td></tr>
+                <tr><td>Потеря прочности при морозе, %</td><td>≤ 25</td><td class="fv">6,0</td></tr>
+                <tr><td>Потеря массы при морозе, %</td><td>≤ 5</td><td class="fv">1,3</td></tr>
+                <tr><td>Водонепроницаемость (ГОСТ 12730.5)</td><td>262–387 с</td><td class="fv">324 с · W12</td></tr>
+                <tr><td>Средняя плотность, кг/м³</td><td>&gt; 1400</td><td class="fv">1630</td></tr>
+                <tr><td>Водоудерживающая способность, %</td><td>≥ 95</td><td class="fv">97</td></tr>
                 <tr><td>Подвижность, Пк, см</td><td>4–8 (Пк2)</td><td class="fv">7</td></tr>
+                <tr><td>Влажность, %</td><td>≤ 0,2</td><td class="fv">0,1</td></tr>
+                <tr><td>Радионуклиды, А<sub>эфф</sub>, Бк/кг</td><td>≤ 370</td><td class="fv">85</td></tr>
               </tbody>
             </table>
               </div>
@@ -296,7 +508,7 @@
     </section>
 
     <!-- SPECS -->
-    <section id="specs" class="section reveal sect-surface">
+    <section id="specs" class="section reveal">
       <div class="container">
         <div class="section-header">
           <div class="section-label">Технические данные</div>
@@ -306,7 +518,7 @@
           <div class="specs-block">
             <div class="specs-head">
               <span class="sbadge sbadge-cert">Сертификационные испытания</span>
-              <span class="specs-note">Протокол № 2209 · ИЛ «КазЮжстройсертиф»</span>
+              <span class="specs-note">Протокол № 1563С · ИЛ «КазЮжстройсертиф»</span>
             </div>
             <div class="tbl-scroll">
               <table class="spec-table full-tbl">
@@ -314,13 +526,14 @@
               <tbody>
                 <tr><td>Влажность, %</td><td>ГОСТ 8735-88</td><td>≤ 0,2</td><td class="fv">0,1</td></tr>
                 <tr><td>Подвижность, Пк, см</td><td>ГОСТ 5802-86</td><td>4–8 (Пк2)</td><td class="fv">7</td></tr>
-                <tr><td>Средняя плотность, кг/м³</td><td>ГОСТ 5802-86</td><td>&gt; 1400</td><td class="fv">1550</td></tr>
-                <tr><td>Водонепроницаемость</td><td>ГОСТ 12730.5</td><td>W10</td><td class="fv">W12</td></tr>
-                <tr><td>Прочность при изгибе, 28 сут, МПа</td><td>ГОСТ 310.4-81</td><td>≥ 4,5</td><td class="fv">5</td></tr>
-                <tr><td>Прочность при сжатии, 28 сут, МПа</td><td>ГОСТ 5802-86</td><td>≥ 38,0 (М350)</td><td class="fv">40</td></tr>
-                <tr><td>Число циклов замораживания / оттаивания</td><td>ГОСТ 5802-86</td><td>8</td><td class="fv">8</td></tr>
-                <tr><td>Потеря прочности, %</td><td></td><td>≤ 25</td><td class="fv">6,2</td></tr>
-                <tr><td>Потеря массы, %</td><td></td><td>≤ 5</td><td class="fv">2,5</td></tr>
+                <tr><td>Средняя плотность, кг/м³</td><td>ГОСТ 5802-86</td><td>&gt; 1400</td><td class="fv">1630</td></tr>
+                <tr><td>Водоудерживающая способность, %</td><td>ГОСТ 5802-86</td><td>≥ 95</td><td class="fv">97</td></tr>
+                <tr><td>Прочность при изгибе, 28 сут, МПа</td><td>ГОСТ 310.4-81</td><td>≥ 4,0</td><td class="fv">4,2</td></tr>
+                <tr><td>Прочность при сжатии, 28 сут, МПа</td><td>ГОСТ 10180-2012</td><td>≥ 29,5</td><td class="fv">33,5</td></tr>
+                <tr><td>Морозостойкость, циклов</td><td>ГОСТ 5802-86</td><td>F50 · 50</td><td class="fv">F50 · 50</td></tr>
+                <tr><td>Потеря прочности / массы, %</td><td></td><td>≤ 25 / ≤ 5</td><td class="fv">6,0 / 1,3</td></tr>
+                <tr><td>Водонепроницаемость</td><td>ГОСТ 12730.5-2018</td><td>W12</td><td class="fv">W12</td></tr>
+                <tr><td>Радионуклиды, Бк/кг</td><td>ГОСТ 30108-94</td><td>≤ 370</td><td class="fv">85</td></tr>
               </tbody>
             </table>
               </div>
@@ -354,7 +567,7 @@
     </section>
 
     <!-- CONSUMPTION -->
-    <section id="consumption" class="section reveal">
+    <section id="consumption" class="section reveal sect-surface">
       <div class="container">
         <div class="section-header">
           <div class="section-label">Расход материала</div>
@@ -367,6 +580,60 @@
           <div class="cons-card"><span class="cons-thick">50 мм</span><span class="cons-val">~110</span><span class="cons-unit">кг/м²</span></div>
         </div>
         <p class="cons-note">Учитывать технологический отскок 5–10&thinsp;%. Расход без учёта отскока. Для точного расчёта рекомендуется пробное нанесение на участке не менее 1 м².</p>
+      </div>
+    </section>
+
+    <!-- PRICE -->
+    <section id="price" class="section reveal price">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Стоимость</div>
+          <h2 class="section-title">Цена SHOTCRETE PRO CC1</h2>
+        </div>
+        <div class="price-grid">
+          <div class="price-card">
+            <div class="price-top">
+              <span class="price-kicker">За тонну · с завода в Актобе</span>
+              <div class="price-main"><span class="price-num">108&thinsp;000</span><span class="price-cur">₸</span></div>
+              <span class="price-per">за 1 тонну = 40 мешков по 25 кг</span>
+            </div>
+            <div class="price-rows">
+              <div class="price-row"><span>Мешок 25 кг</span><b>2&thinsp;700 ₸</b></div>
+              <div class="price-row"><span>1 м² при слое 10 мм (~22 кг)</span><b>≈ 2&thinsp;376 ₸</b></div>
+              <div class="price-row"><span>1 м² при слое 50 мм (~110 кг)</span><b>≈ 11&thinsp;880 ₸</b></div>
+              <div class="price-row"><span>Отгрузка</span><b>г. Актобе, Промзона</b></div>
+            </div>
+            <a class="btn btn-primary price-cta" href="tel:87471111964">Заказать · 8 747 111 19 64</a>
+            <p class="price-note">Условия оплаты, НДС и доставка до рудника — в коммерческом предложении.</p>
+          </div>
+
+          <form class="calc" id="calc" onsubmit="return false" aria-label="Калькулятор расхода и стоимости">
+            <div class="calc-head">
+              <span class="calc-title">Калькулятор объекта</span>
+              <span class="calc-hint">расход ~22 кг/м² на каждые 10 мм</span>
+            </div>
+            <label class="calc-field">
+              <span>Площадь, м²</span>
+              <input type="number" id="calc-area" min="1" step="1" value="500" inputmode="numeric"/>
+            </label>
+            <div class="calc-field">
+              <span>Толщина слоя, мм <output id="calc-th-out">50</output></span>
+              <input type="range" id="calc-th" min="10" max="120" step="5" value="50" aria-label="Толщина слоя, мм"/>
+              <div class="calc-scale"><span>10</span><span>60</span><span>120</span></div>
+            </div>
+            <fieldset class="calc-field calc-seg">
+              <legend>Запас на отскок</legend>
+              <label><input type="radio" name="calc-reb" value="0"/><span>0&thinsp;%</span></label>
+              <label><input type="radio" name="calc-reb" value="5"/><span>5&thinsp;%</span></label>
+              <label><input type="radio" name="calc-reb" value="10" checked/><span>10&thinsp;%</span></label>
+            </fieldset>
+            <div class="calc-out" aria-live="polite">
+              <div><span>Смесь</span><b id="calc-t">—</b></div>
+              <div><span>Мешков 25 кг</span><b id="calc-bags">—</b></div>
+              <div class="calc-sum"><span>Стоимость</span><b id="calc-sum">—</b></div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -466,59 +733,25 @@
       </div>
     </section>
 
-    <!-- DELIVERY MAP -->
-    <section id="delivery" class="section sect-surface dm">
+    <!-- GEO: Актюбинская область -->
+    <section id="geo" class="section reveal sect-surface geo">
       <div class="container">
-        <div class="section-header dm-head">
+        <div class="section-header geo-head">
           <div>
-            <div class="section-label">География поставок</div>
-            <h2 class="section-title">Карта поставок<br/>по рудникам Казахстана</h2>
+            <div class="section-label">География</div>
+            <h2 class="section-title">Завод в Актобе —<br/>рядом с рудниками</h2>
           </div>
-          <p class="dm-lead">Где работают горнорудные компании и как далеко они от нашего завода в Актобе. Нажмите на объект, чтобы увидеть маршрут, расстояние и ориентировочный срок доставки.</p>
+          <p class="geo-lead">Производство находится в Актюбинской области, где сосредоточены хромовые, медные и золоторудные месторождения. Точками отмечены горнорудные объекты Казахстана.</p>
         </div>
-
-        <div class="dm-stats" aria-label="Сводка">
-          <div class="dm-stat"><span class="dm-stat-num" data-count="15">0</span><span class="dm-stat-lbl">объектов на карте</span></div>
-          <div class="dm-stat"><span class="dm-stat-num" data-count="5">0</span><span class="dm-stat-lbl">горнорудных компаний</span></div>
-          <div class="dm-stat"><span class="dm-stat-num" data-count="100" data-suffix=" км">0</span><span class="dm-stat-lbl">до ближайшего, по дороге</span></div>
-          <div class="dm-stat"><span class="dm-stat-num" data-count="6" data-suffix=" из 15">0</span><span class="dm-stat-lbl">в пределах 300 км</span></div>
-        </div>
-
-        <div class="dm-chips" id="dm-chips" role="group" aria-label="Фильтр по компаниям"></div>
-
-        <div class="dm-layout">
-          <div class="dm-map-wrap">
-            <div id="dm-map" class="dm-map" role="region" aria-label="Карта Казахстана с объектами и заводом EasyMix"></div>
-            <button class="dm-reset" id="dm-reset" type="button">Весь Казахстан</button>
-            <div class="dm-legend" id="dm-legend" aria-hidden="true"></div>
+        <div class="geo-wrap">
+          <svg class="geo-svg" viewBox="0 0 1000 555" role="img" aria-label="Карта Казахстана: Актюбинская область выделена, остальные регионы серым"><defs><radialGradient id="geoGlow"><stop offset="0" stop-color="#7EC64A" stop-opacity=".45"/><stop offset="1" stop-color="#7EC64A" stop-opacity="0"/></radialGradient><pattern id="geoGrid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="rgba(255,255,255,.035)" stroke-width="1"/></pattern></defs><rect width="1000" height="555" fill="url(#geoGrid)"/><path class="geo-kz" d="M99.3,389.9L98.6,390.9L97.3,390.7L94.9,386.9L95.5,383.1L97.6,381.8L96.1,384.3L95.9,386.5L97.4,388.9L99.3,389.9ZM102.4,385.7L101.1,383.9L102.0,382.0L103.3,381.7L102.9,384.8ZM159.0,370.0L157.0,369.4L156.0,367.8L157.3,365.9L158.5,366.2L159.2,368.2L159.0,370.0ZM595.1,482.9L593.0,484.3L590.7,484.8L589.5,485.7L588.3,487.9L587.1,489.8L585.3,490.3L584.2,488.9L582.3,488.9L580.3,490.7L577.8,493.6L574.7,498.1L571.5,500.5L567.4,502.5L564.4,503.4L562.0,505.0L558.1,508.1L557.3,509.9L554.5,511.0L552.3,512.2L550.1,514.3L549.6,518.0L548.2,520.1L545.0,523.0L542.3,525.9L540.5,528.8L538.6,531.8L538.1,533.5L538.0,535.8L538.8,537.7L539.0,539.5L538.3,540.8L536.5,541.3L534.5,541.0L531.6,539.7L528.5,537.3L527.3,536.2L525.8,534.2L526.0,532.4L526.8,528.8L527.4,526.4L526.1,525.2L525.2,523.9L524.5,522.8L523.1,520.4L521.5,521.0L520.0,521.5L518.4,520.7L513.4,521.1L509.7,521.3L506.2,521.6L501.7,521.9L496.4,522.3L494.8,521.8L493.9,521.0L492.9,517.7L492.4,514.9L491.3,509.7L490.6,505.7L489.8,501.0L489.3,495.7L488.8,491.9L484.8,491.8L481.5,491.7L477.1,491.5L477.2,488.6L477.2,484.8L477.3,480.5L478.1,474.9L478.4,470.1L478.8,464.4L479.0,460.6L479.4,456.4L477.1,457.6L474.6,459.1L472.2,460.5L470.6,457.0L469.1,453.8L466.6,448.7L464.9,445.0L461.9,442.8L459.5,441.1L457.1,438.4L455.0,435.6L453.2,432.9L450.8,430.5L448.6,431.3L446.0,432.8L443.6,434.1L441.0,435.7L439.7,436.3L436.7,436.1L434.2,435.8L429.5,435.4L425.6,435.1L421.5,434.7L415.9,434.2L410.3,433.6L406.5,434.3L401.7,435.2L396.6,436.1L392.4,436.9L387.2,437.8L383.2,438.6L381.2,438.5L378.7,435.4L374.9,430.6L372.5,427.6L370.1,424.8L366.8,420.6L364.0,417.4L361.4,414.4L359.9,411.5L359.2,407.9L357.8,406.3L354.7,404.2L351.4,401.8L348.1,399.5L344.8,397.1L341.5,394.7L338.2,392.4L334.9,390.0L331.6,387.7L328.3,385.4L325.0,383.0L321.8,380.7L318.4,378.3L315.1,376.0L311.8,373.6L308.5,371.3L305.2,368.9L301.9,366.6L299.2,364.9L296.7,365.3L292.9,366.5L288.9,367.8L285.1,369.0L278.0,371.2L273.4,372.6L269.9,373.9L266.1,375.2L261.2,376.8L257.1,378.2L252.2,379.9L248.0,381.4L244.4,382.6L240.6,383.8L237.6,384.9L237.6,393.1L237.6,401.2L237.6,409.4L237.6,417.7L237.6,425.8L237.6,434.0L237.6,442.2L237.6,450.4L237.6,458.6L237.6,466.8L237.6,474.9L237.6,483.1L237.7,491.4L237.7,499.5L237.7,507.7L237.7,515.9L234.3,516.3L230.6,517.4L227.4,518.0L225.9,517.7L224.7,516.8L223.6,515.0L222.0,512.8L220.3,511.1L218.2,507.4L216.7,504.6L213.2,498.5L212.7,496.6L212.0,494.6L210.9,493.0L206.7,488.9L201.8,485.3L197.0,481.8L195.6,480.9L193.4,479.8L190.6,479.7L188.7,479.9L183.0,481.1L178.6,482.5L172.6,484.4L167.9,486.5L166.9,487.1L163.5,489.5L159.3,493.7L154.5,499.5L153.9,495.8L153.7,490.0L153.8,488.1L155.0,483.2L156.4,479.9L157.5,476.4L158.0,471.9L157.0,464.6L155.9,463.0L154.5,462.4L153.1,462.3L150.5,462.6L149.3,463.2L147.1,460.7L144.5,460.3L143.2,461.0L141.8,461.4L140.3,460.7L139.0,459.2L138.2,457.6L137.6,455.9L135.6,452.3L133.6,450.4L131.1,450.0L127.2,450.0L125.9,449.9L125.8,447.8L126.3,443.3L126.3,441.0L126.1,438.8L125.4,437.0L124.5,435.5L122.2,432.9L120.4,429.3L117.4,421.9L114.8,413.5L113.7,412.2L111.4,410.9L106.2,409.8L102.9,408.7L101.6,407.7L101.0,405.9L101.1,403.9L101.3,401.6L102.1,399.6L104.8,398.1L110.5,397.8L115.5,398.0L120.0,401.4L121.5,402.2L123.1,402.5L126.2,401.3L127.9,401.1L131.8,401.4L130.6,399.7L129.2,398.9L127.6,399.0L126.2,398.3L124.1,395.0L120.2,391.4L119.4,389.9L119.1,387.5L119.8,385.4L122.5,383.3L124.8,380.4L125.9,376.5L126.8,374.7L128.8,371.9L131.7,372.4L136.4,370.5L143.9,370.8L152.9,370.3L155.4,370.5L161.1,372.4L164.5,373.3L168.4,373.7L171.4,372.9L168.6,370.1L162.7,367.0L161.2,364.3L163.9,356.9L167.6,350.2L169.8,342.2L169.2,334.2L168.1,332.1L168.4,329.5L169.7,327.3L170.7,325.1L169.9,322.5L168.3,318.5L167.4,317.1L164.6,315.0L158.9,314.8L154.3,313.7L152.8,314.7L151.9,316.1L150.8,317.1L147.2,319.0L146.0,319.4L144.8,319.0L143.0,316.8L141.5,317.1L136.6,315.7L134.4,312.7L125.8,309.9L123.1,309.4L117.0,311.9L112.5,315.1L111.2,315.5L108.9,317.5L107.6,317.9L106.2,317.5L105.0,317.6L102.3,320.6L97.4,324.2L95.0,326.4L92.3,327.8L89.3,328.6L86.2,328.8L85.1,329.6L81.5,329.8L79.4,330.5L79.7,334.3L77.9,333.4L76.0,335.3L76.6,337.0L75.5,336.6L70.1,333.2L65.7,330.9L61.8,328.8L60.1,327.4L59.4,325.8L59.2,324.1L59.6,322.8L60.6,322.0L62.6,322.0L63.8,322.7L65.7,323.7L68.3,323.8L69.9,323.1L70.1,321.4L67.1,315.0L64.3,309.8L61.6,304.0L60.4,301.9L57.0,297.1L53.8,292.3L51.2,288.0L49.8,286.7L45.7,286.1L37.7,285.2L34.9,284.7L32.6,285.9L30.3,286.9L28.2,285.0L26.5,282.1L25.6,279.5L26.0,276.9L26.2,273.1L24.9,269.4L23.5,267.5L19.8,266.1L15.3,262.9L14.0,257.2L16.2,248.9L19.8,243.0L22.4,240.6L23.7,238.5L24.1,236.6L23.8,234.8L22.2,233.0L19.8,231.2L18.6,228.9L19.2,224.0L20.7,217.1L23.2,211.5L26.5,208.5L29.3,206.3L30.4,204.2L30.5,201.3L30.4,198.5L31.2,196.5L32.3,194.9L33.6,193.5L35.4,192.0L37.6,191.5L40.2,192.8L43.6,196.2L48.7,203.0L51.6,207.4L52.6,208.7L55.3,211.3L57.6,212.4L61.5,210.8L65.4,208.9L66.6,207.6L67.4,205.8L66.8,202.7L66.0,200.7L65.1,198.2L63.9,193.7L63.2,186.7L62.1,184.5L64.8,184.6L66.5,184.8L69.1,183.3L72.5,180.4L78.8,175.9L80.2,172.9L81.2,169.7L83.0,167.6L87.1,167.0L90.8,165.9L93.3,163.6L97.5,161.6L100.9,160.3L102.4,159.1L103.5,157.5L107.3,152.6L110.4,149.6L113.0,146.5L114.0,144.6L116.0,144.9L119.3,146.3L122.7,147.5L125.3,149.4L125.8,151.3L126.1,152.9L127.1,153.7L128.3,153.8L130.2,153.4L133.4,153.4L137.3,150.8L142.9,146.6L148.0,145.3L150.6,146.3L152.8,149.4L154.6,152.4L156.3,153.4L157.9,153.5L160.1,152.9L162.3,153.0L164.3,154.0L167.5,154.1L172.0,153.3L174.6,153.4L177.3,154.7L179.3,156.4L183.0,161.6L185.1,163.0L189.4,164.9L191.5,166.5L193.8,169.2L195.0,170.8L197.6,173.7L200.5,178.5L201.1,182.2L201.7,185.5L202.8,187.0L204.7,186.6L205.6,185.2L206.0,182.7L205.7,178.5L205.0,174.9L203.9,173.8L203.5,172.6L204.2,170.9L205.8,170.2L207.8,170.7L211.1,172.7L214.7,175.3L219.0,179.8L222.9,182.5L227.3,184.8L230.7,185.5L233.4,184.8L236.5,183.0L239.4,180.9L240.7,178.6L241.6,176.2L245.9,172.9L249.9,169.9L251.7,170.5L253.0,171.3L257.0,169.5L258.5,169.0L262.4,168.3L266.3,169.3L269.5,172.5L272.7,174.6L275.4,174.4L277.7,173.3L279.2,171.3L280.3,169.0L281.9,167.4L287.0,168.2L290.1,168.1L294.5,168.4L299.1,171.7L301.8,175.3L305.4,180.0L307.1,181.5L309.5,182.2L311.4,182.5L313.9,183.1L320.6,184.1L322.4,185.5L321.8,188.1L327.8,186.9L329.2,185.5L331.0,181.7L332.7,177.8L333.8,176.4L335.1,176.0L336.4,176.5L338.2,178.8L340.6,181.2L343.8,182.0L345.8,182.4L348.9,182.6L356.2,181.5L363.0,178.7L366.9,175.6L368.7,170.9L369.8,165.8L371.5,162.4L370.8,159.1L367.4,155.9L366.3,154.9L357.9,153.1L357.4,151.7L348.7,148.6L344.8,147.4L343.7,145.5L343.0,143.0L340.4,140.9L335.3,138.9L334.4,137.3L335.3,135.8L339.3,134.1L343.8,130.5L345.6,129.7L349.7,129.6L353.5,126.6L356.0,125.0L357.4,122.9L357.1,120.9L353.3,114.6L352.2,110.8L352.9,108.4L355.0,105.7L356.2,104.3L357.8,101.7L358.7,100.2L362.5,99.7L367.1,99.4L370.3,100.1L374.8,100.3L378.8,100.8L380.8,101.3L382.4,100.5L383.5,99.1L383.4,97.2L381.8,95.4L375.9,93.1L373.3,91.1L371.4,91.3L368.0,90.7L365.0,89.5L362.3,89.0L361.5,87.2L362.0,84.7L363.0,83.4L365.0,82.6L367.1,83.0L369.5,82.0L370.3,80.6L368.8,78.5L367.4,78.3L365.6,79.1L363.5,79.6L359.9,78.5L357.1,77.1L357.2,75.8L359.3,73.9L360.2,72.4L360.2,70.3L360.2,67.8L361.0,64.9L363.1,62.9L365.5,61.8L371.9,63.7L379.8,65.5L381.1,65.2L382.4,63.5L393.3,63.1L395.5,62.0L396.5,61.2L407.1,59.8L408.3,58.6L409.9,57.5L412.3,57.5L415.2,57.1L419.2,55.7L422.1,54.9L425.6,55.1L429.3,54.1L430.7,52.8L433.9,51.2L440.2,49.9L441.7,50.7L444.7,51.1L448.5,50.4L451.3,49.4L453.0,50.4L455.1,51.4L456.9,50.6L457.6,47.8L458.7,45.2L460.6,43.9L462.1,43.4L463.5,42.4L464.4,41.3L469.9,41.5L474.9,38.9L475.8,40.1L482.2,39.8L490.2,38.0L494.9,37.2L503.2,35.4L507.0,34.0L512.4,33.1L517.4,32.5L520.6,29.9L523.3,29.6L526.5,29.4L528.4,28.8L529.6,27.8L530.5,26.0L530.1,23.8L529.6,22.2L531.9,21.3L535.1,21.0L537.2,20.6L541.7,16.9L544.8,15.1L548.0,14.0L554.5,14.6L560.3,15.2L566.3,16.9L569.4,19.2L572.0,20.8L574.5,21.6L576.8,22.1L579.4,21.4L581.3,20.4L582.4,18.9L584.1,17.9L590.1,17.1L591.3,18.6L594.2,23.4L596.1,29.7L599.4,38.1L600.7,42.2L600.1,44.4L600.1,47.3L600.0,50.6L597.5,54.3L598.5,56.0L604.3,57.9L612.5,57.2L617.5,55.7L620.3,56.2L621.8,55.3L622.7,52.6L624.6,52.0L626.6,53.9L628.1,57.1L629.4,59.2L629.3,61.7L629.9,64.9L630.8,65.7L632.9,64.4L634.2,63.7L633.9,61.6L633.6,60.3L635.0,58.8L637.9,59.2L642.0,59.8L646.9,64.3L649.5,65.1L653.1,64.9L656.2,63.6L658.1,62.0L659.9,61.3L661.1,62.1L661.1,63.7L660.3,66.1L657.3,68.3L653.6,70.3L651.4,74.0L650.8,77.9L651.9,79.9L652.7,81.2L652.9,83.1L655.3,82.5L659.4,78.8L661.5,77.8L664.6,77.1L669.6,77.4L672.9,78.7L674.6,80.4L676.3,81.9L677.6,81.3L678.2,79.6L678.2,77.8L678.7,76.2L684.2,72.4L687.9,69.8L689.1,69.5L691.6,70.1L693.0,69.8L697.1,67.4L700.8,64.7L701.2,62.8L701.3,61.2L702.2,60.4L707.5,59.8L712.8,57.6L719.0,54.4L722.0,52.5L727.5,51.6L730.3,49.7L733.8,48.0L735.6,47.8L734.5,52.1L732.5,57.1L731.3,58.4L725.8,58.2L725.8,59.5L726.6,61.6L727.2,62.8L727.9,63.8L729.4,65.7L735.2,69.9L742.7,75.3L750.8,81.5L756.4,85.7L758.6,88.0L760.1,89.6L764.2,95.9L768.1,101.8L774.8,112.2L780.6,122.2L787.1,133.2L790.8,139.6L798.5,153.0L800.5,157.1L804.4,164.9L807.8,172.2L810.8,178.7L812.8,179.3L812.9,177.5L814.2,175.7L816.4,173.8L817.6,173.3L819.4,173.5L821.3,172.5L821.9,170.7L821.5,167.3L821.3,165.8L821.9,164.1L822.9,163.4L824.3,162.9L825.6,162.6L826.7,160.7L828.7,160.2L830.5,160.5L832.1,160.6L833.5,162.0L834.2,163.8L835.7,164.0L838.1,163.8L838.3,165.4L837.7,168.1L836.9,170.1L836.7,171.8L838.0,172.5L842.6,171.8L844.3,172.2L844.8,173.9L845.5,175.2L845.8,176.9L845.3,178.8L846.2,179.9L850.1,179.9L853.0,179.0L857.4,178.9L861.2,180.9L864.0,180.6L866.7,179.8L870.7,180.3L873.5,178.8L875.5,176.8L876.1,175.3L877.0,174.4L880.8,174.4L883.2,174.3L885.0,172.0L886.6,171.0L889.3,170.8L891.3,170.8L896.6,172.9L899.9,174.7L903.3,177.1L905.3,178.7L906.7,182.2L909.0,184.7L910.8,187.7L911.3,190.7L912.8,196.1L914.3,197.8L916.2,197.8L918.5,198.5L921.1,199.1L926.7,203.1L928.7,203.2L930.2,204.1L930.5,205.9L929.9,208.0L930.6,210.1L932.4,212.7L933.7,215.2L935.6,218.3L936.1,220.0L937.4,220.6L939.4,219.7L942.4,220.4L951.6,222.1L952.8,222.4L953.8,224.2L955.1,224.0L956.6,223.9L958.7,224.2L960.1,222.5L961.3,221.0L964.3,219.2L966.8,216.7L969.0,214.6L970.5,214.3L971.8,215.3L971.8,217.2L970.3,218.5L969.1,220.2L969.3,221.9L971.5,222.1L973.8,224.6L977.1,230.5L978.3,231.7L980.0,232.9L981.8,233.4L983.9,234.3L985.3,236.7L986.0,238.9L983.8,238.2L979.4,238.1L976.8,238.5L975.5,238.7L973.7,240.2L972.3,241.7L971.8,244.2L972.5,247.0L971.6,252.8L970.3,255.0L967.5,258.8L965.9,259.6L963.3,260.4L960.7,261.5L955.8,262.6L950.3,263.1L948.4,263.9L947.1,266.5L946.0,268.7L945.4,270.4L944.0,275.8L943.0,280.7L943.9,286.7L944.6,293.4L944.5,295.7L945.9,299.2L946.5,301.3L946.2,304.2L944.3,306.6L943.2,309.8L942.1,311.0L939.0,311.7L936.1,312.0L933.1,314.7L930.8,316.6L927.1,318.9L925.4,319.4L924.5,318.2L923.8,315.5L922.6,314.3L920.8,314.2L919.3,314.2L914.8,313.5L911.8,313.5L909.6,314.1L907.0,314.4L902.6,313.4L899.8,312.6L897.9,311.8L893.4,309.4L887.3,306.7L884.9,305.8L883.5,306.7L883.2,308.3L882.9,312.1L882.2,314.5L878.0,326.7L875.4,335.2L872.1,343.3L871.1,348.8L869.1,355.7L867.2,360.7L866.5,363.5L866.7,366.1L869.7,367.8L872.8,368.9L873.8,371.3L873.8,374.2L873.2,376.9L872.2,379.1L871.4,380.2L868.4,378.9L866.6,377.3L865.3,376.9L861.8,377.7L858.6,378.9L855.7,378.2L853.9,376.7L853.1,373.6L851.5,372.2L849.4,373.6L843.0,375.9L836.0,378.6L831.6,380.0L829.8,379.9L826.3,380.2L823.3,380.9L821.1,382.0L816.6,383.5L812.6,384.4L810.0,386.7L808.1,388.9L809.6,390.9L811.1,392.0L814.2,391.7L817.2,391.5L819.8,392.9L822.0,393.7L822.6,394.9L822.0,396.0L820.7,396.2L820.5,398.0L819.6,400.7L819.2,404.7L819.6,408.7L819.9,412.4L819.7,414.3L819.6,416.9L820.6,418.7L821.4,422.1L823.0,424.2L825.3,431.6L826.7,435.9L828.0,440.8L827.0,443.4L827.1,445.0L828.6,446.3L829.3,448.7L829.9,450.3L829.8,451.8L825.9,451.5L823.2,453.0L820.5,454.5L820.1,456.2L821.9,458.4L824.2,459.2L824.0,460.6L821.3,461.2L817.1,463.3L816.0,465.5L815.1,468.0L815.0,469.4L815.4,473.2L816.1,477.5L817.2,481.9L817.3,483.3L816.2,484.9L812.8,480.9L809.3,477.0L806.5,476.1L801.6,475.4L799.0,475.4L797.5,474.4L796.1,472.2L794.4,470.1L792.1,468.0L791.3,464.7L788.7,464.5L786.0,464.4L784.6,464.0L782.3,463.5L778.7,462.1L776.0,460.9L772.4,460.6L770.4,460.9L763.9,461.1L758.7,459.8L754.4,459.5L751.7,459.6L750.5,459.5L748.4,459.5L745.2,459.1L740.9,457.1L739.3,457.0L731.1,458.6L727.8,459.0L720.9,458.8L714.1,458.6L711.8,458.3L708.1,462.1L707.0,462.7L700.5,461.9L692.9,459.5L687.4,456.8L682.8,454.0L676.6,449.6L672.9,447.4L672.4,448.7L670.0,449.3L666.7,449.0L665.2,451.3L661.2,452.9L658.7,454.3L657.4,455.9L654.8,466.6L654.1,470.6L655.8,477.1L653.8,476.7L651.6,475.1L650.8,473.7L648.6,472.9L640.6,471.7L639.1,470.2L638.1,468.9L636.1,468.1L633.1,467.5L626.8,464.7L624.0,464.6L615.8,462.4L614.5,462.4L610.6,463.9L608.5,464.4L606.4,463.8L602.4,465.5L600.3,467.9L598.6,470.8L596.9,472.6L596.4,475.3L595.1,476.7L593.8,479.6L593.8,481.3L595.1,482.9Z"/><path class="geo-akt" d="M181.5,233.7L186.3,236.9L190.2,235.8L191.1,250.4L203.4,254.8L204.3,249.9L206.8,249.1L212.2,252.4L211.4,264.6L213.6,268.0L212.9,274.2L216.7,279.2L217.2,285.3L214.4,306.1L219.9,317.8L225.1,323.1L232.0,326.6L245.1,330.7L245.8,335.6L249.4,344.3L252.7,351.7L256.0,378.4L300.0,363.6L312.2,373.2L310.5,348.8L312.5,347.1L323.2,331.2L328.2,325.4L336.8,317.1L345.0,316.5L345.5,308.9L355.7,309.4L365.1,285.1L366.1,284.1L379.7,283.8L383.3,287.5L386.5,293.9L389.4,294.4L395.9,301.6L395.3,304.7L404.1,306.5L410.7,300.5L420.9,295.0L429.6,288.3L435.8,281.2L432.0,277.6L429.6,271.6L423.7,261.5L415.3,256.2L407.2,253.3L408.4,246.9L405.8,244.5L401.6,247.4L394.6,241.3L392.1,234.9L394.5,233.0L388.7,224.2L392.2,221.3L391.9,217.6L394.7,215.8L395.7,211.2L399.1,208.4L402.9,210.5L404.2,206.4L401.5,201.6L399.9,199.3L398.7,197.8L394.8,191.5L391.9,181.7L387.8,183.4L386.8,177.3L391.7,175.9L386.4,170.1L388.2,167.7L384.6,165.7L381.3,167.4L377.9,159.3L374.0,161.5L371.1,162.1L368.3,177.5L353.0,182.9L341.5,182.4L338.2,176.4L334.0,177.0L333.7,182.2L329.2,187.2L322.0,188.6L321.3,183.4L306.8,181.3L304.4,177.2L300.1,175.3L301.3,171.1L298.3,167.5L295.1,167.9L293.6,164.8L289.9,168.4L288.1,166.3L284.7,167.5L280.5,165.7L280.3,173.5L275.4,172.9L274.2,175.1L269.8,172.7L266.5,166.5L259.4,168.4L254.9,167.9L256.1,171.2L253.0,170.9L250.4,167.6L246.8,174.2L242.5,172.8L241.5,179.4L234.2,184.1L231.9,186.7L223.5,183.0L215.7,177.1L217.5,174.3L211.8,173.5L208.0,169.8L205.0,169.9L204.0,173.7L206.2,176.9L207.9,184.3L203.5,187.5L199.2,194.9L201.1,198.5L200.8,202.7L204.3,206.0L199.1,219.7L196.7,221.3L185.7,220.8L183.0,225.3L181.5,233.7Z"/><text class="geo-akt-lbl" x="341" y="287" text-anchor="middle">АКТЮБИНСКАЯ<tspan x="341" dy="1.25em">ОБЛАСТЬ</tspan></text><g class="geo-dot" style="--d:0.25s" transform="translate(716.9 314.7)"><title>Пустынное — Карагандинская обл., Актогайский р-н</title><circle r="4"/></g><g class="geo-dot" style="--d:0.30s" transform="translate(642.9 398.2)"><title>Акбакай — Жамбылская обл., Мойынкумский р-н</title><circle r="4"/></g><g class="geo-dot" style="--d:0.35s" transform="translate(619.5 119.2)"><title>Аксу — Акмолинская обл.</title><circle r="4"/></g><g class="geo-dot" style="--d:0.40s" transform="translate(613.3 143.9)"><title>Жолымбет — Акмолинская обл., Шортандинский р-н</title><circle r="4"/></g><g class="geo-dot" style="--d:0.45s" transform="translate(646.4 117.1)"><title>Бестобе — Акмолинская обл.</title><circle r="4"/></g><g class="geo-dot" style="--d:0.50s" transform="translate(841.0 229.5)"><title>Мизек — Абайская обл.</title><circle r="4"/></g><g class="geo-dot" style="--d:0.55s" transform="translate(854.1 184.2)"><title>Артемьевский рудник — ВКО, Шемонаихинский р-н</title><circle r="4"/></g><g class="geo-dot" style="--d:0.60s" transform="translate(871.6 201.5)"><title>Иртышский рудник — ВКО, Глубоковский р-н, пос. Белоусовка</title><circle r="4"/></g><g class="geo-dot" style="--d:0.65s" transform="translate(857.9 185.6)"><title>Николаевская ОФ — ВКО, Шемонаихинский р-н</title><circle r="4"/></g><g class="geo-dot is-akt" style="--d:0.70s" transform="translate(318.2 194.5)"><title>50 лет Октября — Актюбинская обл., Хромтауский р-н</title><circle r="5"/></g><g class="geo-dot is-akt" style="--d:0.75s" transform="translate(315.6 192.0)"><title>Приорское — Актюбинская обл., Хромтауский р-н</title><circle r="5"/></g><g class="geo-dot is-akt" style="--d:0.80s" transform="translate(320.8 183.5)"><title>Весенне-Аралчинское — Актюбинская обл., у границы с РФ</title><circle r="5"/></g><g class="geo-dot is-akt" style="--d:0.85s" transform="translate(304.3 238.4)"><title>Кундызды — Актюбинская обл., Мугалжарские горы</title><circle r="5"/></g><g class="geo-dot is-akt" style="--d:0.90s" transform="translate(302.5 244.8)"><title>Юбилейное — Актюбинская обл., Мугалжарский р-н</title><circle r="5"/></g><g class="geo-dot is-akt" style="--d:0.95s" transform="translate(296.5 197.4)"><title>Донской ГОК — Актюбинская обл., Хромтау</title><circle r="5"/></g><g class="geo-plant" transform="translate(264.9 195.6)"><title>Завод EasyMix — Актобе</title><circle class="geo-glow" r="60" fill="url(#geoGlow)"/><circle class="geo-ring" r="10"/><circle class="geo-ring geo-ring-2" r="10"/><rect x="-7" y="-7" width="14" height="14" transform="rotate(45)"/></g><g class="geo-plant-lbl" transform="translate(246.9 179.6)"><text text-anchor="end">ЗАВОД EASYMIX</text><text class="sub" text-anchor="end" dy="16">г. Актобе</text></g></svg>
+          <div class="geo-legend" aria-hidden="true">
+            <span><i class="lg-plant"></i>Завод EasyMix</span>
+            <span><i class="lg-akt"></i>Актюбинская область</span>
+            <span><i class="lg-dot is-akt"></i>Рудники области</span>
+            <span><i class="lg-dot"></i>Рудники Казахстана</span>
           </div>
-          <aside class="dm-panel" id="dm-panel" aria-live="polite">
-            <div class="dm-card" id="dm-card"></div>
-            <div class="dm-list-head">Объекты по удалённости</div>
-            <ol class="dm-list" id="dm-list"></ol>
-          </aside>
         </div>
-
-        <div class="dm-table-head">
-          <h3 class="dm-h3">Расстояние и срок доставки</h3>
-          <span class="dm-note">отгрузка с завода в Актобе</span>
-        </div>
-        <div class="dm-table-wrap">
-          <table class="dm-table" id="dm-table">
-            <thead>
-              <tr><th>Объект</th><th>Компания</th><th>Регион</th><th>Сырьё</th><th class="num">По дороге</th><th class="num">По прямой</th><th class="num">Срок</th><th aria-label="Индикатор"></th></tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-
-        <div class="dm-companies" id="dm-companies"></div>
-
-        <details class="dm-sources">
-          <summary>Источники и точность данных</summary>
-          <p>Объекты с пометкой ≈ показаны ориентировочно, точность ±10–20 км. Дорожные расстояния и время в пути рассчитаны по OpenStreetMap (OSRM). Срок доставки ориентировочный, для автотранспорта; точный срок по вашему объекту уточняйте у менеджера. Данные на 12.10.2026.</p>
-          <ul id="dm-sources"></ul>
-        </details>
       </div>
     </section>
 
@@ -554,8 +787,9 @@
               <div class="cc-row"><span class="cc-lbl">БИН</span><code>171140033124</code></div>
               <div class="cc-row"><span class="cc-lbl">Адрес производства</span><span class="cc-val">РК, Актюбинская обл., г. Актобе,<br/>район Астана, квартал Промзона, 627</span></div>
               <div class="cc-row"><span class="cc-lbl">Стандарт</span><code>ГОСТ 31357-2007</code></div>
-              <div class="cc-row"><span class="cc-lbl">Сертификат</span><code>KZ.7500669.01.01.01610</code></div>
+              <div class="cc-row"><span class="cc-lbl">Сертификат</span><code>KZ.7500669.01.01.83093</code></div>
               <div class="cc-row"><span class="cc-lbl">Код ТН ВЭД ЕАЭС</span><code>3824 50 9000</code></div>
+              <div class="cc-row"><span class="cc-lbl">Цена</span><span class="cc-val cc-price">108 000 ₸ / тонна · 2 700 ₸ / мешок</span></div>
             </div>
           </div>
         </div>
@@ -573,8 +807,9 @@
       <div class="footer-codes">
         <code>ГОСТ 31357-2007</code>
         <code>БИН 171140033124</code>
-        <code>KZ.7500669.01.01.01610</code>
+        <code>KZ.7500669.01.01.83093</code>
         <code>ТН ВЭД 3824 50 9000</code>
+        <code>108 000 ₸/т</code>
       </div>
     </div>
   </footer>
@@ -586,17 +821,17 @@
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
       <span>О продукте</span>
     </a>
-    <a href="#applications" class="bn-item">
-      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-      <span>Применение</span>
+    <a href="#mine" class="bn-item">
+      <svg viewBox="0 0 24 24"><path d="M3 21V11a9 9 0 0118 0v10M3 21h18M8 21v-6h8v6"/></svg>
+      <span>Шахта</span>
     </a>
     <a href="#certification" class="bn-item">
       <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.8L20 8l-4 3.9.9 5.6L12 15l-4.9 2.5.9-5.6L4 8l5.6-.8z"/></svg>
-      <span>Сертификат</span>
+      <span>Документы</span>
     </a>
-    <a href="#specs" class="bn-item">
-      <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6M9 16h4"/></svg>
-      <span>Параметры</span>
+    <a href="#price" class="bn-item">
+      <svg viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 01-2.8 0L3 13V3h10l7.6 7.6a2 2 0 010 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
+      <span>Цена</span>
     </a>
     <a href="#contacts" class="bn-item">
       <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 4.18 2 2 0 015.07 2h3a2 2 0 012 1.72c.13 1 .37 1.98.72 2.91a2 2 0 01-.45 2.11L9.09 9.91a16 16 0 006.99 7l1.18-1.18a2 2 0 012.11-.45c.93.35 1.9.59 2.91.72A2 2 0 0122 18z"/></svg>
@@ -607,7 +842,5 @@
   </div><!-- /page-clip -->
 
   <script src="script.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
-  <script src="map.js?v=1" defer></script>
 </body>
 </html>

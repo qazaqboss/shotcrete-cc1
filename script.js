@@ -98,3 +98,36 @@ bnItems.forEach(item => {
     setTimeout(() => { item.style.transform = ''; }, 150);
   }, { passive: true });
 });
+
+/* ── CALCULATOR ───────────────────────────────────────── */
+(() => {
+  const form = document.getElementById('calc');
+  if (!form) return;
+  const PRICE_T = 108000, BAG = 25, KG_PER_M2_MM = 2.2;
+  const area = document.getElementById('calc-area');
+  const th = document.getElementById('calc-th');
+  const thOut = document.getElementById('calc-th-out');
+  const fmt = n => n.toLocaleString('ru-RU').replace(/,/g, ' ');
+  const out = { t: document.getElementById('calc-t'), bags: document.getElementById('calc-bags'), sum: document.getElementById('calc-sum') };
+  function calc() {
+    const a = Math.max(0, parseFloat(area.value) || 0);
+    const mm = parseFloat(th.value);
+    const reb = parseFloat((form.querySelector('input[name="calc-reb"]:checked') || {}).value || 0);
+    thOut.textContent = mm;
+    const kg = a * mm * KG_PER_M2_MM * (1 + reb / 100);
+    const bags = Math.ceil(kg / BAG);
+    const tons = bags * BAG / 1000;
+    out.t.textContent = tons.toLocaleString('ru-RU', { maximumFractionDigits: 2 }) + ' т';
+    out.bags.textContent = fmt(bags);
+    out.sum.textContent = fmt(Math.round(bags * PRICE_T * BAG / 1000)) + ' ₸';
+  }
+  form.addEventListener('input', calc);
+  calc();
+})();
+
+/* ── REDUCED MOTION: остановить SVG-анимации шахты на финальном кадре ── */
+if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.mine-svg').forEach(svg => {
+    try { svg.setCurrentTime(parseFloat(svg.dataset.still || 0)); svg.pauseAnimations(); } catch (e) {}
+  });
+}
