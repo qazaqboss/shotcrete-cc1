@@ -189,3 +189,12 @@
   .plate-live i, .m-vent, .m-spray, .geo-ring { animation: none; }
   .geo .geo-akt, .geo .geo-dot circle { transition: none; }
 }
+
+/* ── ШАПКА: пункты меню в одну строку ─────────────── */
+.nav-desktop a { white-space: nowrap; padding: 0 clamp(8px, 0.9vw, 14px); }
+.header-inner { gap: 20px; }
+@media (max-width: 1240px) {
+  .nav-desktop { display: none; }
+  .burger { display: flex; }
+  .header-actions { margin-left: auto; }
+}
